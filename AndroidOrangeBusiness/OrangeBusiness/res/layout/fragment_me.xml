@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bg_all_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fragment_me_header_layout"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_me"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:background="@color/transparent">
+
+                <TextView
+                    android:id="@+id/view_header_mTxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:lines="1"
+                    android:text="我的"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <com.socialbusiness.dev.orangebusiness.component.CircleImageView xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fragment_me_image"
+                    android:layout_width="@dimen/me_avatar_size"
+                    android:layout_height="@dimen/me_avatar_size"
+                    android:layout_marginLeft="15dp"
+                    CircleImageView:border_color="@color/white"
+                    CircleImageView:border_width="0dp"
+                    android:src="@drawable/image_header" />
+
+                <TextView
+                    android:id="@+id/fragment_me_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/order_detail_big_text_size"
+                    android:layout_gravity="center_vertical" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1.0" />
+
+                <ImageView
+                    android:id="@+id/fragment_me_arrow_right_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/my_header_indicator"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/fragment_me_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/total_credits"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/order_detail_small_text_size"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_me_credit_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/order_detail_small_text_size"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_me_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/type"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+                <TextView
+                    android:id="@+id/fragment_me_type_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_me_vip_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/vip_function"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/fragment_me_my_product_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/sl_item_bg"
+                android:clickable="true">
+
+
+                <TextView
+                    android:id="@+id/fragment_me_my_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_product"
+                    android:drawablePadding="0dp"
+                    android:textColor="@color/mall_right_text_color"
+                    android:drawableTop="@drawable/ic_product"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/cell_divider" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_me_my_lower_level_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/sl_item_bg"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_lower_level"
+                    android:textColor="@color/mall_right_text_color"
+                    android:drawableTop="@drawable/ic_my_lower_level"
+                    android:drawablePadding="0dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/fragment_me_notification_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/sl_item_bg"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/notice_notification"
+                    android:textColor="@color/mall_right_text_color"
+                    android:drawableTop="@drawable/ic_notice_me"
+                    android:drawablePadding="0dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/cell_divider" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_me_manager_addr_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/sl_item_bg"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="收货地址"
+                    android:textColor="@color/mall_right_text_color"
+                    android:drawableTop="@drawable/ic_manager_addr"
+                    android:drawablePadding="0dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/order_detail_small_text_size" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <TextView
+            android:id="@+id/fragment_me_vip_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/vip_help"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_me_course_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_salse_item_height"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/fragment_me_course_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_salse_item_margin_left"
+                android:src="@drawable/ic_course" />
+
+            <TextView
+                android:id="@+id/fragment_me_course_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/fragment_me_course_image"
+                android:gravity="center_vertical"
+                android:text="@string/courseware"
+                android:textSize="@dimen/order_detail_small_text_size"
+                android:textColor="@color/mall_right_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_me_set_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_salse_item_height"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/fragment_me_set_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_salse_item_margin_left"
+                android:src="@drawable/ic_set" />
+
+            <TextView
+                android:id="@+id/fragment_me_set_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/fragment_me_set_image"
+                android:gravity="center_vertical"
+                android:text="@string/settings"
+                android:textSize="@dimen/order_detail_small_text_size"
+                android:textColor="@color/mall_right_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/client_user"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_me_2dimension_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fragment_me_2dimension_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_scan" />
+
+            <TextView
+                android:id="@+id/fragment_me_2dimension_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/fragment_me_2dimension_image"
+                android:gravity="center_vertical"
+                android:text="@string/scanning_2dimension_code_constructing"
+                android:textSize="16sp"
+                android:textColor="@color/mall_right_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+    </LinearLayout>
+
+</ScrollView>

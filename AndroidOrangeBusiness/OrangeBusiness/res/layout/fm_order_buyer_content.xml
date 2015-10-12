@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_e0"
+    android:orientation="vertical">
+    
+	<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+	    android:id="@+id/fm_order_buyer_content_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+        android:layout_weight="1.0"
+	    android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_sales_waiting_deliver_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tabs_height"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计："
+                android:textColor="@color/tabbar_txt_unselect_color"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuan_symbol"
+                android:textColor="@color/red_product_price"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+            <TextView
+                android:id="@+id/activity_sales_waiting_deliver_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/red_product_price"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_sales_waiting_deliver_merge_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector_no_corners"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="上传付款凭证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/order_detail_normal_text_size" />
+    </RelativeLayout>
+</LinearLayout>

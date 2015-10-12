@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/view_courseware_list_leftLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/product_bg_outside"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/view_courseware_list_left_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/product_bg_inside" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/view_courseware_list_leftimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/image_product_tv"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_courseware_list_lefttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp"
+            android:text="课件分类一"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_courseware_list_rightLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/product_bg_outside"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/view_courseware_list_right_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/product_bg_inside" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/view_courseware_list_rightimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/image_product_phone"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_courseware_list_righttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp"
+            android:text="课件分类二"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

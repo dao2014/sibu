@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/activity_main_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#DEDEDE" />
+
+    <LinearLayout
+        android:id="@+id/tab_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_main_productTab"
+            style="@style/tab_bar_product_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="商城" />
+
+
+        <TextView
+            android:id="@+id/activity_main_contactTab"
+            style="@style/tab_bar_contact_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="@string/seller_function" />
+
+        <TextView
+            android:id="@+id/activity_main_orderTab"
+            style="@style/tab_bar_order_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="@string/buyer_function" />
+
+        <FrameLayout
+            android:id="@+id/activity_main_messageTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/tab_bar_msg_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:text="@string/main_tab_message" />
+
+            <ImageView
+                android:id="@+id/activity_main_newMsgIndicator"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/bg_nums" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/activity_main_meTab"
+            style="@style/tab_bar_personal_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="我的" />
+    </LinearLayout>
+</LinearLayout>

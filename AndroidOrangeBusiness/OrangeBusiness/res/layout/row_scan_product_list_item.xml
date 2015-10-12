@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false"
+    >
+    <LinearLayout
+        android:id="@+id/row_scan_item_header_stander_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/row_contact_item_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/row_scan_item_header_stander"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="3箱+3盒" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/row_scan_item_header_selcet_stander"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="确定扫描箱盒"
+            android:background="@drawable/btn_selector_only"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textSize="13sp"
+            android:textColor="@color/main_color"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/row_scan_item_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/row_scan_item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/row_scan_item_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="扫箱" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="false"
+        >
+
+        <TextView
+            android:id="@+id/row_scan_product_list_item_numTV"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:maxWidth="84dp"
+            android:minWidth="28dp"
+            android:maxLength="3"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_bg_green"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/row_scan_product_list_item_productCodeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="none"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="输入或扫描二维码录入商品编号" />
+
+        <ImageView
+            android:id="@+id/row_scan_product_list_item_scanBtnIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_qrcode" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

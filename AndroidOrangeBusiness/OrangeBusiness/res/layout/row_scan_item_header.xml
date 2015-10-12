@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/row_scan_item_header_stander_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            >
+
+            <TextView
+                android:id="@+id/row_contact_item_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/row_scan_item_header_stander"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="3箱+3盒" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/row_scan_item_header_selcet_stander"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="确定扫描箱盒"
+            android:background="@drawable/btn_selector_only"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_e0"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="10px"
+        />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_diverder_line" />
+    <RelativeLayout
+        android:id="@+id/activity_place_an_order_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sl_item_bg"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/activity_place_an_order_consignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consignee"
+            android:textColor="@color/black"
+            android:textSize="@dimen/order_detail_normal_text_size" />
+
+        <TextView
+            android:id="@+id/activity_place_an_order_consignee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_place_an_order_consignee"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/order_detail_normal_text_size" />
+
+        <TextView
+            android:id="@+id/activity_place_an_order_consignee_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/activity_place_an_order_image"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/order_detail_normal_text_size" />
+
+        <ImageView
+            android:id="@+id/activity_place_an_order_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:id="@+id/activity_place_an_order_consignee_delivery_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_place_an_order_consignee"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/order_detail_small_text_size" />
+    </RelativeLayout>
+<!--
+    <View
+        android:id="@+id/activity_place_an_order_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark" />
+-->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_diverder_line" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="10px"
+         />
+
+    <View 
+        android:id="@+id/activity_place_an_order_line_behide"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark"/>
+    
+    <ListView
+        android:id="@+id/activity_place_an_order_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <RelativeLayout 
+        android:id="@+id/activity_place_an_order_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/my_order_item_margin_left"
+        android:background="@color/bg_all_layout"
+
+        >
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark"/>
+        
+        <TextView 
+            android:id="@+id/activity_place_an_order_bottom_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:gravity="center_vertical"
+            android:background="@color/btn_normal"
+            android:clickable="true"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/order_detail_normal_text_size"/>
+        
+        <TextView 
+            android:id="@+id/activity_place_an_order_bottom_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="@string/total_money"
+            android:textColor="@color/gray_userinfo"
+            android:textSize="@dimen/order_detail_normal_text_size"/>
+        <TextView
+            android:id="@+id/activity_place_an_order_bottom_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/activity_place_an_order_bottom_sum"
+            android:text="@string/total_money_y"
+            android:textColor="@color/red_product_price"
+            android:textSize="@dimen/order_detail_normal_text_size"/>
+        <TextView 
+            android:id="@+id/activity_place_an_order_bottom_sum_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/activity_place_an_order_bottom_y"
+            android:paddingLeft="@dimen/my_order_item_parking_text"
+            android:layout_marginRight="10dp"
+            android:text="100"
+            android:textColor="@color/red_product_price"
+            android:textSize="@dimen/order_detail_normal_text_size"/>
+    </RelativeLayout>
+</LinearLayout>

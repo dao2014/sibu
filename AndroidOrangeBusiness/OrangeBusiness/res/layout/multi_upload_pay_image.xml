@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <!--<include-->
+      <!--layout="@layout/pay_image_layout"-->
+      <!--/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计：¥"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/bottom_total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        </LinearLayout>
+    <com.socialbusiness.dev.orangebusiness.component.MultiUploadPayImageLayout
+        android:id="@+id/multi_upload_pay_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/order_detail_footerview_upload_pays_voucher"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="@string/upload_pays_voucher"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

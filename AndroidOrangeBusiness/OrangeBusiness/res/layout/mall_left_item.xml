@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/left_item_index"
+            android:layout_width="4dp"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/left_item_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="柔肤水"
+            android:gravity="center"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:singleLine="true"
+            android:textColor="@color/mall_left_text_color"
+            />
+    </LinearLayout>
+</LinearLayout>

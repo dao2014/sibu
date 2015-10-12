@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/order_detail_footerview_pays_voucher_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/order_detail_footerview_pays_voucher_topline"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark"
+            />
+
+        <RelativeLayout
+            android:id="@+id/order_detail_footerview_pays_money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/order_detail_footerview_pays_money_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pays_money"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/order_detail_footerview_pays_money_edittext"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:layout_toRightOf="@id/order_detail_footerview_pays_money_txt"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1px"
+                android:background="@color/cell_divider_dark"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/order_detail_footerview_pays_money_txt"
+                android:layout_below="@id/order_detail_footerview_pays_money_txt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_detail_footerview_pays_money_remark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/order_detail_footerview_pays_money_remark_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pays_money_remark"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/order_detail_footerview_pays_money_remark_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toRightOf="@id/order_detail_footerview_pays_money_remark_txt"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider_dark"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/order_detail_footerview_pays_money_remark_txt"
+                android:layout_below="@id/order_detail_footerview_pays_money_remark_edittext" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_detail_footerview_pays_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_detail_footerview_pays_money_layout"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/pays_voucher"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image"
+                            style="@style/pay_image_style_no_image"
+                            />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image1"
+                            style="@style/pay_image_style_no_image" />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete1"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image2"
+                            style="@style/pay_image_style_no_image" />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete2"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image3"
+                            style="@style/pay_image_style_no_image" />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete3"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image4"
+                            style="@style/pay_image_style_no_image" />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete4"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/pay_image_layout_style">
+
+                        <!--<ImageView style="@style/pay_image_plus_style" />-->
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/order_detail_footerview_pays_voucher_image5"
+                            style="@style/pay_image_style_no_image" />
+
+                        <Button
+                            android:id="@+id/pays_voucher_image_delete5"
+                            style="@style/pay_image_delete_style" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feight_total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费：¥"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/bottom_transtion_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计：¥"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/bottom_total_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/order_detail_footerview_pays_voucher_image"
+            android:background="@color/cell_divider_dark" />
+    </LinearLayout>
+
+
+</LinearLayout>

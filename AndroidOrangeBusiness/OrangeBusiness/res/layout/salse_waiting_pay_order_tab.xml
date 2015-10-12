@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefebe7">
+
+    <LinearLayout
+        android:id="@+id/fragment_order_mTabContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tabs_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fragment_order_my_purchase"
+            style="@style/tab_item_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="已传付款凭证" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cell_divider_dark"
+            />
+
+        <TextView
+            android:id="@+id/fragment_order_my_sales"
+            style="@style/tab_item_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="未传付款凭证" />
+    </LinearLayout>
+
+    <com.socialbusiness.dev.orangebusiness.component.TabIndicator
+        android:id="@+id/fragment_order_mTabIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/fragment_order_mTabContent"
+        android:background="@color/white" />
+
+    <com.socialbusiness.dev.orangebusiness.component.FixedViewPager
+        android:id="@+id/fragment_order_mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_order_mTabIndicator" />
+
+    <View
+        android:id="@+id/fragment_order_view_cell_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/fragment_order_mTabIndicator"
+        android:background="@color/cell_divider" />
+
+</RelativeLayout>

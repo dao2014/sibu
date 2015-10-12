@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_header_layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/main_color" >
+
+    <LinearLayout
+        android:id="@+id/emHeaderBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="#00000000"
+            android:src="@drawable/header_ic_back"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emHeaderTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    <ImageView
+        android:id="@+id/emHeaderRemoveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:src="@drawable/header_ic_remove"
+        android:visibility="invisible" />
+    
+    <ImageView
+        android:id="@+id/emHeaderGroupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:src="@drawable/header_ic_to_group"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#A1A1A1" />
+
+</RelativeLayout>

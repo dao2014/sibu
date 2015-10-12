@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 导航栏 -->
+
+    <include layout="@layout/view_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/ActivityBase_contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg_e0"
+            />
+
+        <RelativeLayout
+            android:id="@+id/activity_base_nodata_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/activity_base_nodata_image"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_above="@+id/activity_base_nodata_text"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/activity_base_nodata_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:text="@string/base_nodata" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_base_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/activity_base_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/activity_base_loading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_base_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/base_loading" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

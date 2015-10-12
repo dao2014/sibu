@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/my_add_addrees"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/add_address_name_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_add_addrees"
+                    android:src="@drawable/add_name"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/add_address_name_img"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/add_addrees_name_show"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="收件人"
+                        android:textColor="@color/boarder_color_dark"
+                        android:paddingBottom="@dimen/my_add_addrees_button"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                    <EditText
+                        android:id="@+id/activity_address_add_name"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/address_add_edit_name"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_left_text_color"
+                        android:textColorHint="@color/cell_divider"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/my_add_addrees"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/add_address_phone_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_add_addrees"
+                    android:src="@drawable/add_phone"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/add_address_phone_img"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/add_addrees_phone_show"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="联系电话"
+                        android:textColor="@color/boarder_color_dark"
+                        android:paddingBottom="@dimen/my_add_addrees_button"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                    <EditText
+                        android:id="@+id/activity_address_add_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/address_add_edit_phone"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_left_text_color"
+                        android:textColorHint="@color/cell_divider"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/my_add_addrees"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/add_address_district_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_add_addrees"
+                    android:src="@drawable/add_zone"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/add_address_district_img"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/add_addrees_district_show"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="所在地区"
+                        android:textColor="@color/boarder_color_dark"
+                        android:paddingBottom="@dimen/my_add_addrees_button"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                    <EditText
+                        android:id="@+id/activity_address_add_district"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/select_district"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_left_text_color"
+                        android:textColorHint="@color/cell_divider"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/my_add_addrees"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/add_address_code_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_add_addrees"
+                    android:src="@drawable/add_code"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/add_address_code_img"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/add_addrees_code_show"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="邮政编码"
+                        android:textColor="@color/boarder_color_dark"
+                        android:paddingBottom="@dimen/my_add_addrees_button"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                    <EditText
+                        android:id="@+id/activity_address_add_code"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/address_add_edit_code"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_left_text_color"
+                        android:textColorHint="@color/cell_divider"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/my_add_addrees"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/add_address_detail_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/my_add_addrees"
+                    android:src="@drawable/add_detail"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_toRightOf="@+id/add_address_detail_img"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/add_addrees_detail_show"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="详细地址"
+                        android:textColor="@color/boarder_color_dark"
+                        android:paddingBottom="@dimen/my_add_addrees_button"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                    <EditText
+                        android:id="@+id/activity_address_add_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/address_add_edit_detail"
+                        android:singleLine="true"
+                        android:textColor="@color/mall_left_text_color"
+                        android:textColorHint="@color/cell_divider"
+                        android:textSize="@dimen/order_detail_small_text_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <TextView
+            android:id="@+id/activity_address_add_btn"
+
+            style="@style/bottom_btn_style"
+            android:background="@drawable/btn_selector"
+            android:text="@string/confirm_complete" />
+    </LinearLayout>
+</LinearLayout>

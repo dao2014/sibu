@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_add_product_item_all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@drawable/sl_item_bg" >
+    
+	<com.android.volley.toolbox.NetworkImageView 
+	    android:id="@+id/view_add_product_item_image"
+	    android:layout_width="100dp"
+	    android:layout_height="80dp"
+	    android:layout_marginLeft="10dp"
+	    android:background="@drawable/ic_default_mid"
+	    android:scaleType="centerCrop"/>
+	
+	<TextView 
+	    android:id="@+id/view_add_product_item_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/view_add_product_item_image"
+	    android:layout_marginLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:layout_marginTop="2dp"
+	    android:maxLines="2"
+	    android:ellipsize="end"
+	    android:text="商品名称"
+	    android:textSize="15sp"
+	    android:textColor="@color/text_color_dark"/>
+	
+	<TextView 
+	    android:id="@+id/view_add_product_item_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/view_add_product_item_image"
+	    android:layout_alignBottom="@id/view_add_product_item_image"
+	    android:layout_marginLeft="10dp"
+	    android:text="¥100"
+	    android:textColor="@color/red_product_price"
+	    android:textSize="15sp"/>
+	
+	<TextView 
+	    android:id="@+id/view_add_product_item_add_product"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/view_add_product_item_image"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:gravity="center"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:background="@drawable/btn_add_product"
+	    android:text="@string/product_add"
+	    android:textSize="15sp"/>
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_below="@id/view_add_product_item_image"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/cell_divider"/>
+</RelativeLayout>
+

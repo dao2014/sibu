@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_e0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/freight_way"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/view_footerview_place_an_order_freight_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_bg"
+                android:hint="@string/input_freight_way"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:gravity="clip_horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="@dimen/order_model_left"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/gray_b3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="运费:"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/view_footerview_place_an_order_freight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="@dimen/order_model_left"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="top"
+                android:text="@string/buyer_remark"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/view_footerview_place_an_order_remarksET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_bg"
+                android:gravity="clip_horizontal"
+                android:layout_marginLeft="@dimen/order_model_left"
+                android:hint="@string/input_buyer_remark"
+                android:minLines="2"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/gray_b3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+    </LinearLayout>
+<!--<include-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/pay_image_layout"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!---->
+    <!--/>-->
+
+    <com.socialbusiness.dev.orangebusiness.component.MultiUploadPayImageLayout
+        android:id="@+id/multi_upload_pay_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

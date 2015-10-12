@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_to_dip_46"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/px_to_dip_33"
+            android:paddingTop="@dimen/px_to_dip_33"
+            android:textColor="#252525"
+            android:textSize="@dimen/px_to_dip_30" />
+
+        <TextView
+            android:id="@+id/show_num"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginTop="13dip"
+            android:layout_toRightOf="@android:id/text1"
+            android:background="@drawable/rc_new_message"
+            android:gravity="center"
+            android:textColor="@color/rc_text_color_secondary_inverse"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/px_to_dip_22"
+        android:layout_marginRight="@dimen/px_to_dip_22"
+        android:background="#e4e4e4"
+        android:contentDescription="@string/content_description" />
+
+</LinearLayout>

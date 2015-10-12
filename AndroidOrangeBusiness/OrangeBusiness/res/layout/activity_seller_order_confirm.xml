@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAllLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_e0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_seller_order_confirm_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_diverder_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/activity_seller_order_confirm_consignee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consignee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/order_detail_normal_text_size"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/activity_seller_order_confirm_consignee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/order_detail_normal_text_size"
+                android:layout_marginRight="8dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/activity_seller_order_confirm_consignee_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/order_detail_normal_text_size"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_seller_order_confirm_consignee_delivery_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="收货地址："
+            android:textColor="@color/black"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_diverder_line" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider" />
+    <ListView
+        android:id="@+id/activity_seller_order_confirm_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_bg_e0"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

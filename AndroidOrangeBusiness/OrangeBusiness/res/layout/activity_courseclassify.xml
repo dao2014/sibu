@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_layout" >
+
+    <RelativeLayout
+        android:id="@+id/activity_courseware_search_bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_product_search_bg" >
+
+        <RelativeLayout
+            android:id="@+id/activity_courseware_search_layout"
+           style="@style/search_layout_style" >
+
+            <ImageView
+                android:id="@+id/activity_courseware_searchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/ic_search_product" />
+            
+            <TextView
+                android:id="@+id/activity_courseware_searchTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="@string/search"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_courseware_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/activity_courseware_searchTxt"
+                android:layout_toRightOf="@id/activity_courseware_searchIcon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_courseware_name_to_search"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/activity_courseware_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/activity_courseware_search_layout"
+            android:background="@color/cell_divider_dark" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/activity_courseware_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_courseware_search_bg_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

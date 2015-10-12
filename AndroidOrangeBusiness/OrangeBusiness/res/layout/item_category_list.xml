@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/item_product_list_leftLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/product_bg_outside"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/item_product_list_left_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/product_bg_outside"
+            android:padding="2dp"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/item_product_list_leftimage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_product_list_lefttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="系统学习"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/user_info_edit_color"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_product_list_rightLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/product_bg_outside"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/item_product_list_right_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/product_bg_outside"
+            android:padding="2dp"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/item_product_list_rightimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/white" />
+        </LinearLayout>
+	
+        <TextView
+            android:id="@+id/item_product_list_righttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

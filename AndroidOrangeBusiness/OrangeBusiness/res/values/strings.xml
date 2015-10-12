@@ -1,0 +1,331 @@
+<resources>
+<!--
+    <string name="app_name_orangebusiness">思埠万店</string>-->
+    <string name="app_name_orangebusiness">橙商</string>
+    <string name="main_tab_message">消息</string>
+    <string name="main_tab_contact">小伙伴</string>
+    <string name="main_tab_order">橙单</string>
+    <string name="main_tab_product">产品</string>
+    <string name="main_tab_me">我</string>
+    <string name="info_back_key_exit">再按一次返回键退出</string>
+    <string name="comment_take_photo_title">添加图片</string>
+    <string name="comment_take_photo_from_camera">摄像头拍照</string>
+    <string name="comment_take_photo_from_library">手机相册</string>
+    <string name="search">搜索</string>
+    <string name="prompt">提示</string>
+    <string name="ok">确定</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="exit_group">退出</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="logout">退出登录</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+
+    <!-- base -->
+    <string name="base_nodata">当前没有数据</string>
+    <string name="base_reload">重新加载</string>
+    <string name="base_loading">正在加载</string>
+
+    <!-- order -->
+    <string name="total_order_sum">订单总金额</string>
+    <string name="total_order_num">总订单数</string>
+    <string name="total_deliver_sum">总发货金额</string>
+    <string name="month_deliver_nums">当月订单金额</string>
+    <string name="month_deliver_sum">当月出货金额</string>
+    <string name="month_profit_constructing">当月利润（建设中）</string>
+    <string name="month_profit">总金额</string>
+    <string name="seller_function">销售</string>
+    <string name="waiting_handle_order">待确认订单</string>
+    <string name="mysales_order">我的零售</string>
+    <string name="mysales_order_constructing">@string/mysales_order</string>
+    <string name="waiting_confirm_order">@string/waiting_handle_order</string>
+    <string name="waiting_deliver_order">待发货订单</string>
+    <string name="seller_waiting_deliver_order">@string/waiting_deliver_order</string>
+    <string name="sales_waiting_deliver_order">待付款订单</string>
+    <string name="done_deliver_order">已发货订单</string>
+    <string name="receipted_order">已收货订单</string>
+    <string name="buyer_function">采购</string>
+    <string name="my_shopping_cart">我的购物车</string>
+
+    <!-- order new -->
+    <string name="my_purchase">@string/buyer_function</string>
+    <string name="my_sales">@string/seller_function</string>
+    <string name="purchase_order">采购订单</string>
+    <string name="sales_order">销售订单</string>
+    <string name="sales_order_detail">零售订单详情</string>
+    <string name="purchase_order_detail">采购订单详情</string>
+    <string name="waiting_2pay_order">@string/sales_waiting_deliver_order</string>
+    <string name="my_inventory">我的仓库</string>
+    <string name="my_purchase_acount_statement">采购对账单</string>
+    <string name="my_scale_acount_statement">销售对账单</string>
+    <string name="my_inventory_constructing">我的库存（建设中）</string>
+    <string name="sales_count">销售统计</string>
+    <string name="order_number">单号：</string>
+    <string name="merge_purchase">合并采购</string>
+    <string name="turn_purchase">转采购</string>
+    <string name="merge_turn_purchase">合并转采购</string>
+    <string name="transportation_fee">运费：¥</string>
+    <string name="all_money_include_fee">总计:¥</string>
+    <string name="buyer_remark">买家备注:</string>
+    <string name="input_buyer_remark">请输入买家备注</string>
+    <string name="seller_remark">卖家备注:</string>
+    <string name="pays_money">付款金额:</string>
+    <string name="pays_money_remark">付款备注:</string>
+    <string name="pays_voucher">付款截图:</string>
+    <string name="upload_pays_voucher">上传付款凭证</string>
+    <string name="freight_way">货运方式:</string>
+    <string name="freight_number">货运单号：</string>
+    <string name="freight_start_number">货运起始单号：</string>
+    <string name="freight_end_number">货运终止单号：</string>
+    <string name="input_freight_way">请输入货运方式</string>
+    <string name="select_all">全选</string>
+    <string name="input_freight_number">请输入或用条形码扫描录入单号</string>
+    <string name="order_order_number">订单单号：</string>
+	<string name="add_order">添加订单</string>
+	<string name="add_product">添加产品</string>
+	<string name="customer_name">客户名称：</string>
+	<string name="recipient">收件人：</string>
+	<string name="product_add">添加</string>
+	<string name="product_added">已添加</string>
+    
+    <!-- orderlist -->
+    <string name="symbol_multiply">×</string>
+    <string name="buyer">买家：</string>
+    <string name="seller">专家</string>
+    <string name="place_orders">下单</string>
+    <string name="place_orders_ensure">下单确认</string>
+    <string name="order_time">下单时间：</string>
+    <string name="order_nums">数量：</string>
+    <string name="total_money">总计:</string>
+    <string name="total_money_s">总计:¥</string>
+    <string name="total_money_n">总计：¥</string>
+    <string name="total_money_y">¥</string>
+    <string name="all_money">合计：¥ </string>
+    <string name="all_money_n">合计：¥</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="merge_order">合并订单</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="confirm_deliver">确认发货</string>
+    <string name="subtotal">小计：¥</string>
+    <string name="verify_deliver">确认发货</string>
+
+    <!-- orderdetail -->
+    <string name="consignee">收货人：</string>
+    <string name="order_hint1">请核对收货人信息</string>
+    <string name="delivery_address">收货地址：</string>
+    <string name="order_status">订单状态：</string>
+    <string name="remarks">备注：</string>
+    <string name="transaction_success">交易成功</string>
+    <string name="remarks_no_words">未填写备注</string>
+
+    <!-- my order -->
+    <string name="order_detail">订单详情</string>
+    <string name="my_order">我的订单</string>
+    <string name="his_order">他的订单</string>
+    <string name="waiting_handle">待确认</string>
+    <string name="waiting_2pay">待付款</string>
+    <string name="waiting_deliver">待发货</string>
+    <string name="done_deliver">已发货</string>
+    <string name="receipted">已收货</string>
+    <string name="order_product_list">订单商品列表：</string>
+
+    <!-- product -->
+    <string name="input_product_name_to_search">请输入产品名称进行搜索</string>
+    <string name="product_list">产品列表</string>
+    <string name="add_to_shopping_cart">加入购物车</string>
+    <string name="product_name">产品名称</string>
+    <string name="goods_serial_number">商品编号</string>
+    <string name="product_effect">产品功效：</string>
+    <string name="using_ways">使用方法：</string>
+    <string name="product_video">产品视频</string>
+    <string name="product_introduce">产品备注</string>
+    <string name="product_detail">产品详情</string>
+    <string name="yuan_symbol">¥</string>
+    <string name="no">No.</string>
+    <string name="yuan_100">¥ 100</string>
+
+    <!-- me -->
+    <string name="total_credits">积分：</string>
+    <string name="type">类别：</string>
+    <string name="vip_function">会员功能</string>
+    <string name="my_product">我的产品</string>
+    <string name="notice_notification">公告通知</string>
+    <string name="my_lower_level">我的客户</string>
+    <string name="manage_my_taking_over_addr">管理我的收货地址</string>
+    <string name="vip_help">会员帮助</string>
+    <string name="client_user">我是终端用户</string>
+    <string name="scanning_2dimension_code">扫描产品二维码</string>
+    <string name="scanning_2dimension_code_constructing">扫描产品二维码（建设中）</string>
+    <string name="courseware">课件</string>
+    <string name="input_courseware_name_to_search">请输入课件名称</string>
+    <string name="time">时间：</string>
+    <string name="courseware_detail">课件详情</string>
+    <string name="author">作者：</string>
+
+    <!-- notice -->
+    <string name="notice_item_put">发布者：</string>
+    <string name="notice_item">公告通知</string>
+    <!-- notice detail -->
+    <string name="notice_detail">公告详情</string>
+    <string name="notice_detail_time_hint">时间：</string>
+    <string name="notice_detail_name_hint">发布人：</string>
+
+    <!-- address manager -->
+    <string name="address_list">选择收货地址</string>
+    <string name="address_list_title">管理我的收货地址</string>
+    <string name="address_delete">删除</string>
+    <string name="address_set">设为默认地址</string>
+    <string name="default_address">默认地址</string>
+    <string name="address_editor">编辑</string>
+
+    <!-- address add -->
+    <string name="address_add">添加收货地址</string>
+    <string name="address_add_name">收货人姓名：</string>
+    <string name="address_add_phone">收货人手机号码：</string>
+    <string name="address_add_address">收货人地址：</string>
+    <string name="address_add_code">邮编号码：</string>
+    <string name="address_add_edit_name">收件人姓名</string>
+    <string name="address_add_edit_phone">收件人电话</string>
+    <string name="address_add_edit_detail">收件人详细地址</string>
+    <string name="address_add_edit_code">所在地区邮编</string>
+    <string name="select_district">选择收件人所在地区</string>
+    <string name="address_add_edit_city">请输入所在城市</string>
+    <string name="district_live">收货人所在地区：</string>
+    <string name="consignee_detail_address">收货人详细地址：</string>
+    <string name="address_add_btn">添加收货人</string>
+    <string name="address_modify_btn">保存修改</string>
+    <string name="confirm_complete">确认添加</string>
+    
+    <!-- courseware -->
+    <string name="courseware_item_time">时间：</string>
+    <string name="courseware_title">课件列表</string>
+    <!-- level -->
+    <string name="vip_detail_title">我的客户</string>
+    <string name="level_title">我的客户</string>
+    <string name="vip_detail_hint1">积分：</string>
+    <string name="vip_detail_hint2">类别：</string>
+    <string name="vip_detail_by">@string/buyer_function</string>
+    <string name="vip_detail_seller">@string/seller_function</string>
+    <string name="vip_detail_vip">会员功能</string>
+    <string name="vip_detail_already_send">已发货订单</string>
+    <string name="vip_detail_wait_send">@string/sales_waiting_deliver_order</string>
+    <string name="vip_detail_wait_handle">待确认订单</string>
+    <string name="vip_detail_user_level">他的客户</string>
+
+    <!-- my information -->
+    <string name="change_personal_info">修改个人资料</string>
+    <string name="photo_txt">头像</string>
+    <string name="base_information">基本资料</string>
+    <string name="network_name">网名</string>
+    <string name="user_remark">备注名</string>
+    <string name="type_userinfo">类别</string>
+    <string name="is_admin">是否工作人员</string>
+    <string name="is_member">是否我的会员</string>
+    <string name="realname">姓名</string>
+    <string name="sex">性别</string>
+    <string name="id_card_no">身份证</string>
+    <string name="contact_way">联系方式</string>
+    <string name="mobilephone_number">手机号码</string>
+    <string name="phone">手机号码：</string>
+    <string name="weixin_number">微信号</string>
+    <string name="qq_number">QQ</string>
+    <string name="email">邮箱</string>
+    <string name="residential_addr">居住地址</string>
+    <string name="save_change">保存修改</string>
+    <string name="change_type">修改类别</string>
+    <string name="promulgator">发布人：</string>
+
+    <!-- my lower level -->
+    <string name="person_number">人数：</string>
+    <string name="vip_level1">一级会员</string>
+    <string name="vip_level2">二级会员</string>
+    <string name="vip_level3">三级会员</string>
+    <string name="vip_level4">四级会员</string>
+    <string name="vip_level5">五级会员</string>
+    <string name="vip_level6">六级会员</string>
+    <string name="vip_level7">七级会员</string>
+    <string name="vip_level8">八级会员</string>
+    <string name="vip_level9">九级会员</string>
+    <string name="vip_level10">十级会员</string>
+    <string name="his_lower_level">他的客户</string>
+
+    <!-- manage my taking over addr -->
+    <string name="take_over_addr_management">收货地址管理</string>
+    <string name="delete">删除</string>
+    <string name="set_default_addr">设为默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="add_take_over_addr">添加收货地址</string>
+    <string name="consignee_name">收货人姓名：</string>
+    <string name="input_consignee_nee">请输入收货人姓名</string>
+    <string name="consignee_mobilephone_number">收货人手机号码：</string>
+    <string name="input_consignee_mobilephone_number">请输入收货人手机号码</string>
+    <string name="consignee_detailed_addr">收货人详细地址：</string>
+    <string name="input_consignee_detailed_addr">请输入收货人详细地址</string>
+    <string name="post_code">邮编号码：</string>
+    <string name="input_postcode">请输入邮编号码</string>
+    <string name="add_consignee">添加收货人</string>
+    <string name="change_take_over_addr">修改收货地址</string>
+
+    <!-- login -->
+    <string name="account">账号：</string>
+    <string name="login_password">密码</string>
+    <string name="login">登录</string>
+    <string name="remember_password">记住密码</string>
+    <string name="register">注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="see_tutorials">第一次使用教程</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="input_register_phone">请输入注册的手机号码</string>
+    <string name="phone_register_step1">手机号：</string>
+    <string name="verify_code_step1">验证码：</string>
+    <string name="referrer">推荐人：</string>
+    <string name="input_referrer_phone">请输入推荐人的手机号码（必填）</string>
+    <string name="input_verification_code">请输入手机验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="nickname">昵称：</string>
+    <string name="passwork">密码：</string>
+    <string name="weixin_step2">微信号：</string>
+    <string name="password_new">新密码：</string>
+    <string name="password_confirm">确认密码：</string>
+    <string name="input_nickname">请输入昵称</string>
+    <string name="input_password_step2">请输入登录密码</string>
+    <string name="input_weixin_step2">请输入微信号</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_new_password">请输入新的密码</string>
+    <string name="input_new_password_again">请再次输入新的密码</string>
+    <string name="next">下一步</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_order_ensure">提交</string>
+    <string name="use_help">使用帮助</string>
+
+    <!-- settings -->
+    <string name="settings">设置</string>
+    <string name="quit">退出登录</string>
+    <string name="settings_massege_hint">消息提醒</string>
+    <string name="settings_massege_receive">接收新消息通知</string>
+    <string name="settings_massege_sound">声音</string>
+    <string name="settings_massege_shake">震动</string>
+    <string name="settings_massege_other">其他</string>
+    <string name="settings_massege_feedback">意见反馈</string>
+    <string name="settings_massege_check">检查更新</string>
+    <string name="settings_massege_about">关于橙商</string>
+    <string name="settings_about_us_content">广州数通科技有限公司专业从事中小企业ERP管理软件的销售、实施、开发、维护的SAP认证金牌合作伙伴。自2005年成立以来，一贯秉承诚信、负责的服务宗旨，以卓越的创新技术和实干的业务能力迅速成长为优秀的ERP（企业管理软件）供应商之一。数通科技总部位于广州市天河区CBD，业务遍及全国各地，在深圳、北京、上海等地均设有办事处。数通科技成功为近百家企业提供企业管理咨询服务，公司是经中华人民共和国国家版权权局评定批准计算机软件著作权等级证书及由广东省经济和信息化委员会审定批准的双软企业。\n\n\n数通科技在企业信息化的时代背景下，专注于中小企业的信息化集成服务，专为满足成长型企业的动态需求，提高企业对市场动态变化的响应速度，使企业实时准确地把握市场需求的脉搏。数通科技以SAP作为产品核心平台，助企业实现运营流程的拓展和自动化。SAP是全球最大的ERP企业管理软件，在全球120多个国家拥有172,000个企业客户。作为SAP金牌合作伙伴，数通科技始终贯彻国际精细化管理的思想，深入理解企业的业务逻辑，实现丝毫不差的规范化管理。数通科技系统拥有一支专业技术，经验丰富，高效服务的敬业顾问团队，为您的企业倾心效劳。严谨卓越的实施技术，更完美的实现企业信息化管理的实施。\n</string>
+    
+    <!-- AlertDialog -->
+    <string name="alertDialog_positive">确定	</string>
+    <string name="alertDialog_negative">取消</string>
+    <string name="cancel">@string/alertDialog_negative</string>
+    <string name="alertDialog_logout_message">您确定要退出登录吗？</string>
+    <string name="is_delete_product">确定要删除该商品吗？</string>
+    <string name="Disagree">不同意</string>
+    <string name="Agree">同意</string>
+    <string name="function_constructing">功能正在建设中&#8230;</string>
+    <string name="my_product_message">请登录后台管理系统：\n\twww.orangebusiness.com.cn\n进行商品管理</string>
+
+    <!-- WeChat -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+</resources>

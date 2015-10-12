@@ -1,0 +1,57 @@
+
+-dontwarn android.support.**
+-keep class android.support.** { *; }
+
+-dontwarn com.baidu.**
+-keep class com.baidu.** { *; }
+
+-keep class vi.com.gdi.bgl.android.java.EnvDrawText { *; }
+-keep class vi.com.gdi.bgl.android.java.a { *; }
+
+-dontwarn com.umeng.**
+-keep class com.umeng.** { *; }
+
+-dontwarn com.jakewharton.**
+-keep class com.jakewharton.** { *; }
+
+-dontwarn eu.livotov.**
+-keep class eu.livotov.** { *; }
+
+-dontwarn com.google.**
+-keep class com.google.** { *; }
+
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+
+-dontwarn com.android.**
+-keep class com.android.** { *; }
+
+-dontwarn org.json.**
+-keep class org.json.** { *; }
+
+-dontwarn org.apache.**
+-keep class org.apache.** { *; }
+
+-dontwarn com.tencent.**
+-keep class com.tencent.** { *; }
+
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+-dontwarn io.netty.**
+-keep class io.netty.** { *; }
+
+-dontwarn org.msgpack.**
+-keep class org.msgpack.** { *; }
+
+-dontwarn org.jivesoftware.**
+-keep class org.jivesoftware.** { *; }
+
+-dontwarn com.easemob.**
+-keep class com.easemob.** { *; }
+
+-dontwarn org.slf4j.**
+-keep class org.slf4j.** { *; }
+
+-dontwarn io.rong.imkit.demo.**
+-keep class io.rong.imkit.demo.** { *; }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <attr name="iconDrawable" format="reference" />
+    <attr name="disableIconDrawable" format="reference" />
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension" />
+    <attr name="iconWidth" format="dimension" />
+    <attr name="iconHeight" format="dimension" />
+    <attr name="multiState" format="boolean" />
+    <attr name="drawable" format="reference"/>
+    <attr name="text" format="string"/>
+    
+    <declare-styleable name="Menubar">
+        <attr name="mbText" format="reference|string" />
+        <attr name="mbDrawableLeft" format="reference" />
+    </declare-styleable> 
+    
+    <declare-styleable name="OhImageButtonStyle">
+        <attr name="iconDrawable" />
+        <attr name="disableIconDrawable" />
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="iconWidth" />
+        <attr name="iconHeight" />
+        <attr name="multiState" />
+        <attr name="textSingleLine" format="boolean"/>
+        <attr name="android:gravity" />
+    </declare-styleable>
+    
+    
+    <!-- 圆形头像自定义属性 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+</resources>

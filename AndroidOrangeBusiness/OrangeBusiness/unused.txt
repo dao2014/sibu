@@ -1,0 +1,1968 @@
+com.handmark.pulltorefresh.library.BuildConfig
+com.handmark.pulltorefresh.library.ILoadingLayout:
+    public abstract void setTextTypeface(android.graphics.Typeface)
+com.handmark.pulltorefresh.library.IPullToRefresh
+com.handmark.pulltorefresh.library.LoadingLayoutProxy:
+    69:72:public void setTextTypeface(android.graphics.Typeface)
+com.handmark.pulltorefresh.library.OverscrollHelper:
+    static final java.lang.String LOG_TAG
+    static final float DEFAULT_OVERSCROLL_SCALE
+    26:118:public OverscrollHelper()
+com.handmark.pulltorefresh.library.PullToRefreshBase:
+    static final boolean DEBUG
+    static final boolean USE_HW_LAYERS
+    static final java.lang.String LOG_TAG
+    static final float FRICTION
+    public static final int SMOOTH_SCROLL_DURATION_MS
+    public static final int SMOOTH_SCROLL_LONG_DURATION_MS
+    static final int DEMO_SCROLL_INTERVAL
+    static final java.lang.String STATE_STATE
+    static final java.lang.String STATE_MODE
+    static final java.lang.String STATE_CURRENT_MODE
+    static final java.lang.String STATE_SCROLLING_REFRESHING_ENABLED
+    static final java.lang.String STATE_SHOW_REFRESHING_VIEW
+    static final java.lang.String STATE_SUPER
+    146:154:public final boolean demo()
+    201:201:public final boolean isDisableScrollingWhileRefreshing()
+    222:222:public final boolean isScrollingWhileRefreshingEnabled()
+    412:414:public void setLoadingDrawable(android.graphics.drawable.Drawable,com.handmark.pulltorefresh.library.PullToRefreshBase$Mode)
+    461:462:public void setPullLabel(java.lang.CharSequence,com.handmark.pulltorefresh.library.PullToRefreshBase$Mode)
+    480:481:public final void setRefreshing()
+    503:505:public void setRefreshingLabel(java.lang.CharSequence,com.handmark.pulltorefresh.library.PullToRefreshBase$Mode)
+    1016:1017:protected final void smoothScrollToLonger(int)
+    1280:1287:private final void smoothScrollToAndBack(int)
+    43:43:static synthetic void access$100(com.handmark.pulltorefresh.library.PullToRefreshBase,int,long,long,com.handmark.pulltorefresh.library.PullToRefreshBase$OnSmoothScrollFinishedListener)
+com.handmark.pulltorefresh.library.PullToRefreshBase$3
+com.handmark.pulltorefresh.library.PullToRefreshGridView
+com.handmark.pulltorefresh.library.PullToRefreshGridView$InternalGridView
+com.handmark.pulltorefresh.library.PullToRefreshGridView$InternalGridViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView
+com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshListView:
+    88:90:public void clearDivider()
+com.handmark.pulltorefresh.library.PullToRefreshScrollView
+com.handmark.pulltorefresh.library.PullToRefreshScrollView$InternalScrollViewSDK9
+com.handmark.pulltorefresh.library.PullToRefreshWebView
+com.handmark.pulltorefresh.library.PullToRefreshWebView$1
+com.handmark.pulltorefresh.library.PullToRefreshWebView$2
+com.handmark.pulltorefresh.library.PullToRefreshWebView$InternalWebViewSDK9
+com.handmark.pulltorefresh.library.R:
+    9:83:public R()
+com.handmark.pulltorefresh.library.R$anim:
+    10:10:public R$anim()
+com.handmark.pulltorefresh.library.R$attr
+com.handmark.pulltorefresh.library.R$dimen:
+    37:37:public R$dimen()
+com.handmark.pulltorefresh.library.R$drawable:
+    44:44:public R$drawable()
+com.handmark.pulltorefresh.library.R$id:
+    51:51:public R$id()
+com.handmark.pulltorefresh.library.R$layout:
+    70:70:public R$layout()
+com.handmark.pulltorefresh.library.R$string:
+    74:74:public R$string()
+com.handmark.pulltorefresh.library.R$styleable:
+    83:83:public R$styleable()
+com.handmark.pulltorefresh.library.extras.PullToRefreshWebView2
+com.handmark.pulltorefresh.library.extras.PullToRefreshWebView2$JsValueCallback
+com.handmark.pulltorefresh.library.extras.SoundPullEventListener
+com.handmark.pulltorefresh.library.internal.EmptyViewMethodAccessor:
+    public abstract void setEmptyView(android.view.View)
+com.handmark.pulltorefresh.library.internal.FlipLoadingLayout:
+    static final int FLIP_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.IndicatorLayout:
+    static final int DEFAULT_ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.LoadingLayout:
+    static final java.lang.String LOG_TAG
+com.handmark.pulltorefresh.library.internal.RotateLoadingLayout:
+    static final int ROTATION_ANIMATION_DURATION
+com.handmark.pulltorefresh.library.internal.Utils:
+    static final java.lang.String LOG_TAG
+    5:5:public Utils()
+com.handmark.pulltorefresh.library.internal.ViewCompat:
+    25:57:public ViewCompat()
+    44:47:public static void setLayerType(android.view.View,int)
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK11
+com.handmark.pulltorefresh.library.internal.ViewCompat$SDK16:
+    58:58:ViewCompat$SDK16()
+com.kbeanie.imagechooser.BuildConfig
+com.kbeanie.imagechooser.R
+com.kbeanie.imagechooser.R$drawable
+com.kbeanie.imagechooser.R$string
+com.kbeanie.imagechooser.R$style
+com.kbeanie.imagechooser.api.BChooser:
+    52:57:public BChooser(android.support.v4.app.Fragment,int,java.lang.String,boolean)
+    60:65:public BChooser(android.app.Fragment,int,java.lang.String,boolean)
+    public abstract java.lang.String choose()
+    public abstract void submit(int,android.content.Intent)
+    134:142:protected android.content.Context getContext()
+    146:163:protected boolean wasVideoSelected(android.content.Intent)
+com.kbeanie.imagechooser.api.ChooserType
+com.kbeanie.imagechooser.api.ChosenImage:
+    53:53:public java.lang.String getMediaHeight()
+    58:58:public java.lang.String getMediaWidth()
+    62:62:public java.lang.String getExtension()
+com.kbeanie.imagechooser.api.ChosenMedia:
+    17:25:protected java.lang.ref.SoftReference getBitmap(java.lang.String)
+    29:29:public java.lang.String getFileExtension(java.lang.String)
+    33:43:protected java.lang.String getWidth(java.lang.String)
+    47:57:protected java.lang.String getHeight(java.lang.String)
+    public abstract java.lang.String getMediaHeight()
+    public abstract java.lang.String getMediaWidth()
+com.kbeanie.imagechooser.api.ChosenVideo
+com.kbeanie.imagechooser.api.FileUtils:
+    23:23:public FileUtils()
+    40:46:public static java.lang.String getFileExtension(java.lang.String)
+com.kbeanie.imagechooser.api.ImageChooserManager:
+    private static final java.lang.String TAG
+    private static final java.lang.String DIRECTORY
+    59:61:public ImageChooserManager(android.app.Activity,int)
+    64:65:public ImageChooserManager(android.support.v4.app.Fragment,int)
+    68:69:public ImageChooserManager(android.app.Fragment,int)
+    84:85:public ImageChooserManager(android.app.Activity,int,java.lang.String)
+    88:89:public ImageChooserManager(android.support.v4.app.Fragment,int,java.lang.String)
+    93:94:public ImageChooserManager(android.app.Fragment,int,java.lang.String)
+    110:111:public ImageChooserManager(android.app.Activity,int,boolean)
+    115:116:public ImageChooserManager(android.support.v4.app.Fragment,int,boolean)
+    120:121:public ImageChooserManager(android.app.Fragment,int,boolean)
+    143:144:public ImageChooserManager(android.support.v4.app.Fragment,int,java.lang.String,boolean)
+    148:149:public ImageChooserManager(android.app.Fragment,int,java.lang.String,boolean)
+com.kbeanie.imagechooser.api.MediaChooserListener
+com.kbeanie.imagechooser.api.MediaChooserManager
+com.kbeanie.imagechooser.api.VideoChooserListener
+com.kbeanie.imagechooser.api.VideoChooserManager
+com.kbeanie.imagechooser.api.config.Config
+com.kbeanie.imagechooser.api.utils.ImageChooserBuilder
+com.kbeanie.imagechooser.api.utils.ImageChooserBuilder$1
+com.kbeanie.imagechooser.api.utils.VideoChooserBuilder
+com.kbeanie.imagechooser.api.utils.VideoChooserBuilder$1
+com.kbeanie.imagechooser.threads.ImageProcessorThread:
+    private static final java.lang.String TAG
+    private static final int MAX_DIRECTORY_SIZE
+    private static final int MAX_THRESHOLD_DAYS
+com.kbeanie.imagechooser.threads.MediaProcessorThread:
+    private static final java.lang.String TAG
+    private static final int THUMBNAIL_BIG
+    private static final int THUMBNAIL_SMALL
+    456:481:protected void processContentProviderMedia(java.lang.String,java.lang.String)
+com.kbeanie.imagechooser.threads.VideoProcessorListener
+com.kbeanie.imagechooser.threads.VideoProcessorThread
+com.kollway.android.imagecachelib.CacheLog:
+    7:7:private CacheLog()
+    12:13:public static void enable()
+    16:19:public static int v(java.lang.String,java.lang.Object)
+    30:33:public static int i(java.lang.String,java.lang.Object)
+    37:40:public static int w(java.lang.String,java.lang.Object)
+    44:47:public static int e(java.lang.String,java.lang.Object)
+com.kollway.android.imagecachelib.DiskLruImageCache:
+    private static final int APP_VERSION
+    private static final int VALUE_COUNT
+    132:145:public boolean containsKey(java.lang.String)
+    150:158:public void clearCache()
+    161:161:public java.io.File getCacheFolder()
+com.kollway.android.imagecachelib.ImageCacheManager:
+    85:86:public void getImage(java.lang.String,com.android.volley.toolbox.ImageLoader$ImageListener)
+com.kollway.android.imageviewer.BuildConfig
+com.kollway.android.imageviewer.R:
+    9:45:public R()
+com.kollway.android.imageviewer.R$drawable:
+    10:10:public R$drawable()
+com.kollway.android.imageviewer.R$id:
+    22:22:public R$id()
+com.kollway.android.imageviewer.R$layout:
+    32:32:public R$layout()
+com.kollway.android.imageviewer.R$string
+com.kollway.android.imageviewer.R$style
+com.kollway.android.imageviewer.activity.ImageViewerActivity:
+    private static final java.lang.String TAG
+    public static final java.lang.String KEY_URLS
+    public static final java.lang.String KEY_INDEX
+    public static final java.lang.String KEY_INTENTS
+    public static final java.lang.String KEY_DEFAULT_IMAGE_RES
+com.kollway.android.imageviewer.adapter.EnlargedImageAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    112:112:public int getItemPosition(java.lang.Object)
+    120:123:public void notifyDataSetChanged()
+com.kollway.android.imageviewer.adapter.EnlargedImageAdapter$DataSetObserver:
+    public abstract void onDataSetChanged()
+com.kollway.android.imageviewer.component.EnlargeImageView:
+    private static final java.lang.String TAG
+    static final float SCALE_RATE
+    106:107:public void clear()
+    211:212:protected void centerWithAni(boolean,boolean)
+    28:222:public EnlargeImageView(android.content.Context,android.util.AttributeSet)
+    324:340:protected void zoomTo(float,float,float,float)
+    428:429:protected void zoomIn()
+    432:433:protected void zoomOut()
+    436:448:protected void zoomIn(float)
+    451:473:protected void zoomOut(float)
+com.kollway.android.imageviewer.component.EnlargeImageView$2
+com.kollway.android.imageviewer.component.EnlargeImageView$MatrixTransformAnimation
+com.kollway.android.imageviewer.component.LargeDetailViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int PAGER_NEXT_MARGIN_DP
+    private static final int INVALID_POINTER
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    510:512:float distanceInfluenceForSnapDuration(float)
+    524:525:void smoothScrollTo(int,int)
+    590:638:void dataSetChanged()
+    1464:1481:public boolean beginFakeDrag()
+    1491:1519:public void endFakeDrag()
+    1531:1567:public void fakeDragBy(float)
+    1579:1579:public boolean isFakeDragging()
+com.kollway.android.imageviewer.component.LargeDetailViewPager$DataSetObserver:
+    1888:1889:public void onDataSetChanged()
+com.kollway.android.imageviewer.component.LargeDetailViewPager$SimpleOnPageChangeListener
+com.kollway.android.imageviewer.gesture.GestureDetector:
+    private static final int SHOW_PRESS
+    private static final int LONG_PRESS
+    private static final int TAP
+    320:321:public GestureDetector(com.kollway.android.imageviewer.gesture.GestureDetector$OnGestureListener,android.os.Handler)
+    342:343:public GestureDetector(com.kollway.android.imageviewer.gesture.GestureDetector$OnGestureListener)
+    477:478:public void setIsLongpressEnabled(boolean)
+    484:484:public boolean isLongpressEnabled()
+com.kollway.android.imageviewer.gesture.ScaleGestureDetector:
+    private static final float PRESSURE_THRESHOLD
+    416:416:public float getMiddleX()
+    420:420:public float getMiddleY()
+    474:474:public long getTimeDelta()
+    483:483:public long getEventTime()
+com.kollway.android.imageviewer.util.ImageViewerLog:
+    7:7:private ImageViewerLog()
+    12:13:public static void enable()
+    16:19:public static int v(java.lang.String,java.lang.Object)
+    30:33:public static int i(java.lang.String,java.lang.Object)
+    44:47:public static int e(java.lang.String,java.lang.Object)
+com.kollway.disklrucache.DiskLruCache:
+    static final java.lang.String JOURNAL_FILE
+    static final java.lang.String JOURNAL_FILE_TEMP
+    static final java.lang.String JOURNAL_FILE_BACKUP
+    static final java.lang.String MAGIC
+    static final java.lang.String VERSION_1
+    static final long ANY_SEQUENCE_NUMBER
+    static final java.lang.String STRING_KEY_PATTERN
+    private static final java.lang.String CLEAN
+    private static final java.lang.String DIRTY
+    private static final java.lang.String REMOVE
+    private static final java.lang.String READ
+    488:488:public java.io.File getDirectory()
+    496:496:public synchronized long getMaxSize()
+    504:506:public synchronized void setMaxSize(long)
+    514:514:public synchronized long size()
+    618:618:public synchronized boolean isClosed()
+    675:675:private static java.lang.String inputStreamToString(java.io.InputStream)
+    90:90:static synthetic com.kollway.disklrucache.DiskLruCache$Editor access$1600(com.kollway.disklrucache.DiskLruCache,java.lang.String,long)
+    90:90:static synthetic java.lang.String access$1700(java.io.InputStream)
+com.kollway.disklrucache.DiskLruCache$Editor:
+    747:759:public java.io.InputStream newInputStream(int)
+    767:768:public java.lang.String getString(int)
+    811:818:public void set(int,java.lang.String)
+    843:849:public void abortUnlessCommitted()
+com.kollway.disklrucache.DiskLruCache$Snapshot:
+    698:698:public com.kollway.disklrucache.DiskLruCache$Editor edit()
+    708:708:public java.lang.String getString(int)
+    713:713:public long getLength(int)
+com.kollway.disklrucache.StrictLineReader:
+    private static final byte CR
+    private static final byte LF
+com.kollway.disklrucache.Util:
+    31:32:private Util()
+    36:44:static java.lang.String readFully(java.io.Reader)
+com.sea_monster.core.BuildConfig
+com.sea_monster.core.R
+com.sea_monster.core.R$attr
+com.sea_monster.core.R$string
+com.sea_monster.core.common.Const
+com.sea_monster.core.common.Const$DEF
+com.sea_monster.core.common.Const$Parcel
+com.sea_monster.core.common.Const$SYS
+com.sea_monster.core.common.LruCache:
+    49:57:public void resize(int)
+    259:260:public final void evictAll()
+    268:268:public final synchronized int size()
+    277:277:public final synchronized int maxSize()
+    285:285:public final synchronized int hitCount()
+    293:293:public final synchronized int missCount()
+    300:300:public final synchronized int createCount()
+    307:307:public final synchronized int putCount()
+    314:314:public final synchronized int evictionCount()
+    322:322:public final synchronized java.util.Map snapshot()
+com.sea_monster.core.common.Observable
+com.sea_monster.core.common.Observable$Entity
+com.sea_monster.core.common.Observer
+com.sea_monster.core.common.PriorityThreadFactory
+com.sea_monster.core.common.PriorityThreadFactory$1
+com.sea_monster.core.network.ApiCallback
+com.sea_monster.core.network.ApiReqeust
+com.sea_monster.core.network.ApiReqeust$1
+com.sea_monster.core.network.ApiReqeust$2
+com.sea_monster.core.network.AuthType
+com.sea_monster.core.network.BaseApi
+com.sea_monster.core.network.BaseApi$DefaultApiReqeust
+com.sea_monster.core.network.DefaultHttpHandler:
+    183:201:public void cancelRequest()
+com.sea_monster.core.network.HttpHandler:
+    public abstract void cancelRequest()
+com.sea_monster.core.network.HttpRequestProcess:
+    public abstract void processReadyRequest(org.apache.http.HttpRequest)
+com.sea_monster.core.network.MultipartUtils:
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String PARAMETER_SEPARATOR
+    9:9:public MultipartUtils()
+    18:19:public static boolean isEncoded(org.apache.http.HttpEntity)
+    46:54:public static java.lang.String getFormDataContent(java.lang.String,java.util.List,java.lang.String)
+com.sea_monster.core.network.ResRequest:
+    48:48:public java.net.URI getUri()
+    52:53:public void setUri(java.net.URI)
+    56:56:public com.sea_monster.core.network.StoreStatusCallback getStoreStatusCallback()
+com.sea_monster.core.network.entity.MultipartEntity:
+    27:53:public MultipartEntity(java.util.List,byte[],java.lang.String,java.lang.String,java.lang.String)
+com.sea_monster.core.network.packer.AbsEntityPacker:
+    protected java.lang.Object obj
+    14:16:public AbsEntityPacker(java.lang.Object)
+    18:20:public AbsEntityPacker()
+    23:23:public java.lang.Object getModel()
+com.sea_monster.core.network.parser.IEntityParser:
+    public abstract java.lang.Object parse(org.apache.http.HttpEntity)
+    public abstract java.lang.Object parseGzip(org.apache.http.HttpEntity)
+com.sea_monster.core.network.parser.NonResultParser
+com.sea_monster.core.network.parser.ResParser:
+    26:26:public java.io.File parse(org.apache.http.HttpEntity)
+    58:58:public java.io.File parseGzip(org.apache.http.HttpEntity)
+    18:18:public bridge synthetic java.lang.Object parseGzip(org.apache.http.HttpEntity)
+    18:18:public bridge synthetic java.lang.Object parse(org.apache.http.HttpEntity)
+com.sea_monster.core.resource.ResourceManager:
+    private static final java.lang.String TAG
+    66:67:public void removeFromDisk(com.sea_monster.core.resource.model.Resource)
+    74:74:public java.io.File getFile(com.sea_monster.core.resource.model.Resource)
+    156:156:public com.sea_monster.core.network.AbstractHttpRequest requestResource(com.sea_monster.core.resource.model.Resource)
+    164:165:public void cancelRequest(com.sea_monster.core.resource.model.Resource)
+    168:168:public android.graphics.drawable.BitmapDrawable getCompressBitmap(com.sea_monster.core.resource.model.CompressedResource)
+    172:172:public android.graphics.drawable.BitmapDrawable getCompressBitmap(com.sea_monster.core.resource.model.LocalMicroResource)
+    176:177:public void compressImageToFile(com.sea_monster.core.resource.model.CompressedResource,java.io.File)
+com.sea_monster.core.resource.cache.ResourceCacheWrapper:
+    64:64:public boolean containsInDiskCache(com.sea_monster.core.resource.model.Resource)
+    84:84:public uk.co.senab.bitmapcache.CacheableBitmapDrawable getFromDiskCache(com.sea_monster.core.resource.model.Resource)
+    229:276:public java.io.File getCompressFile(com.sea_monster.core.resource.model.CompressedResource,java.lang.String)
+com.sea_monster.core.resource.cache.ResourceCacheWrapper$2
+com.sea_monster.core.resource.compress.AbstractCompressRequest:
+    29:30:public void setStream(java.io.InputStream)
+    33:34:public void setOptions(com.sea_monster.core.resource.model.CompressOptions)
+    41:42:public void setResource(com.sea_monster.core.resource.model.Resource)
+com.sea_monster.core.resource.io.FileSysHandler:
+    private static final java.lang.String TAG
+    public static final java.lang.String SETTING
+    private static final int MIN_FILE_SIZE_IN_BYTES
+    58:61:public java.lang.String getPath(android.net.Uri)
+    129:130:public void invalidate(android.net.Uri)
+    133:142:public void cleanup()
+    163:164:public void clear()
+    167:180:public void clear(byte)
+    205:212:private void delFileOfDir(java.io.File)
+    215:218:public java.lang.String saveTo(java.io.File,java.lang.String)
+    223:227:public java.io.File getWorldWideFile()
+    232:235:public void create(android.net.Uri)
+com.sea_monster.core.resource.io.IFileSysHandler:
+    public abstract java.lang.String getPath(android.net.Uri)
+    public abstract void invalidate(android.net.Uri)
+    public abstract void cleanup()
+    public abstract void clear()
+    public abstract void clear(byte)
+    public abstract java.lang.String saveTo(java.io.File,java.lang.String)
+    public abstract java.io.File getWorldWideFile()
+    public abstract void create(android.net.Uri)
+com.sea_monster.core.resource.io.ResourceRemoteWrapper:
+    private static final java.lang.String TAG
+    64:64:public boolean exists(android.net.Uri)
+    70:70:public java.io.File getFile(android.net.Uri)
+    99:103:public void put(com.sea_monster.core.resource.model.Resource,java.io.InputStream)
+    201:202:public void invalidate(java.net.URI)
+    205:206:public void shutdown()
+    216:217:public void remove(android.net.Uri)
+    220:221:public void remove(com.sea_monster.core.resource.model.Resource)
+com.sea_monster.core.resource.model.CompressOptions:
+    13:14:public CompressOptions(int,int,int,int,int)
+    30:31:public void setCrop(boolean)
+    54:55:public void setSrcWidth(int)
+    62:63:public void setSrcHeight(int)
+    70:71:public void setOrientation(int)
+    76:76:public void compareOffset()
+com.sea_monster.core.resource.model.CompressedResource:
+    24:25:public void setWidth(int)
+    28:29:public void setHeight(int)
+    43:45:public CompressedResource(com.sea_monster.core.resource.model.Resource)
+    65:66:public void setCrop(boolean)
+com.sea_monster.core.resource.model.ImageInfo
+com.sea_monster.core.resource.model.LocalMicroResource:
+    12:13:public LocalMicroResource(long,android.net.Uri)
+com.sea_monster.core.resource.model.LocalResource:
+    17:18:public void setImageId(long)
+    21:23:public LocalResource(long,android.net.Uri)
+com.sea_monster.core.resource.model.RequestResource:
+    24:25:public RequestResource(java.lang.String)
+    28:29:public RequestResource(android.net.Uri)
+    32:33:public RequestResource(android.os.Parcel)
+    36:37:public void registeredStatusChangeListener(com.sea_monster.core.network.StoreStatusCallback)
+    40:41:public void unRegisteredStatusChangeListener()
+    45:45:public com.sea_monster.core.resource.model.StoreStatus getStoreStatus()
+com.sea_monster.core.resource.model.Resource:
+    12:28:public Resource(com.sea_monster.core.resource.model.Resource)
+com.sea_monster.core.resource.model.StoreStatus:
+    17:18:public void setTotalSize(int)
+    29:30:public void setReceivedSize(int)
+com.sea_monster.core.utils.Base64
+com.sea_monster.core.utils.FileUtils:
+    static final java.lang.String TAG
+    public static final java.lang.String NOMEDIA
+    16:16:public FileUtils()
+    19:26:public static java.lang.String getExtendFileNameNoPoint(java.lang.String)
+    31:38:public static java.lang.String getFileNameWithoutExtName(java.lang.String)
+    85:105:public static void Channel(java.io.File,java.io.File)
+com.sea_monster.core.utils.ImageUtils:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_JPEG_QUALITY
+    public static final int UNCONSTRAINED
+    24:24:public ImageUtils()
+    53:62:public static void repairOrientation(java.io.File)
+    65:74:public static void repairOrientation(java.lang.String)
+    77:115:public static android.graphics.Bitmap rotateToPortrait(android.graphics.Bitmap,int)
+    120:154:public static android.graphics.Matrix getRotateMatrix(android.graphics.Bitmap,int)
+    158:160:public static int computeSampleSize(int,int,int,int)
+    164:174:private static int computeInitialSampleSize(int,int,int,int)
+    181:185:public static int computeSampleSizeLarger(int,int,int)
+    190:194:public static int computeSampleSizeLarger(float)
+    199:201:public static int computeSampleSize(float)
+    205:216:public static android.graphics.Bitmap resizeBitmapByScale(android.graphics.Bitmap,float,boolean)
+    220:224:private static android.graphics.Bitmap$Config getConfig(android.graphics.Bitmap)
+    228:233:public static android.graphics.Bitmap resizeDownBySideLength(android.graphics.Bitmap,int,boolean)
+    237:256:public static android.graphics.Bitmap resizeAndCropCenter(android.graphics.Bitmap,int,boolean)
+    260:271:public static com.sea_monster.core.resource.model.ImageInfo getImageInfo(java.lang.String)
+    275:286:public static com.sea_monster.core.resource.model.ImageInfo getImageInfo(java.io.File)
+    290:297:public static void recycleSilently(android.graphics.Bitmap)
+    300:309:public static android.graphics.Bitmap rotateBitmap(android.graphics.Bitmap,int,boolean)
+    315:358:public static android.graphics.Bitmap createVideoThumbnail(java.lang.String)
+    362:362:public static byte[] compressToBytes(android.graphics.Bitmap)
+    366:368:public static byte[] compressToBytes(android.graphics.Bitmap,int)
+    372:375:public static boolean isSupportedByRegionDecoder(java.lang.String)
+    379:382:public static boolean isRotationSupported(java.lang.String)
+com.sea_monster.core.utils.IoUtils
+com.sea_monster.core.utils.Md5:
+    21:21:public Md5()
+com.sea_monster.core.utils.ParcelUtils:
+    14:14:public ParcelUtils()
+    44:50:public static void writeToParcel(android.os.Parcel,java.lang.Float)
+    62:68:public static void writeToParcel(android.os.Parcel,java.util.Map)
+    71:77:public static void writeToParcel(android.os.Parcel,java.util.Date)
+    80:84:public static java.lang.Float readFloatFromParcel(android.os.Parcel)
+    98:102:public static java.util.Date readDateFromParcel(android.os.Parcel)
+    134:138:public static java.util.Map readMapFromParcel(android.os.Parcel)
+    161:167:public static void writeToParcel(android.os.Parcel,java.util.List)
+    171:175:public static java.util.ArrayList readListFromParcel(android.os.Parcel,java.lang.Class)
+    180:186:public static void writeListToParcel(android.os.Parcel,java.util.List)
+    189:199:public static android.os.Parcelable bytesToParcelable(byte[],java.lang.Class)
+    203:207:public static byte[] parcelableToByte(android.os.Parcelable)
+    211:221:public static java.util.List bytesToParcelableList(byte[],java.lang.Class)
+    225:230:public static byte[] parcelableListToByte(java.util.List)
+com.sea_monster.core.utils.Utils
+com.socialbusiness.dev.orangebusiness.BuildConfig
+com.socialbusiness.dev.orangebusiness.Constant:
+    public static final java.lang.String UPEST_DEFAULT_USERID
+    public static final int REQUESTCODE_ADD_PRODUCT
+    public static final java.lang.String EXTRA_KEY_ORDER_SALES_ADD_OBJ
+    public static final java.lang.String EXTRA_KEY_PRODUCT_ITEM_LIST
+    public static final java.lang.String EXTRA_KEY_TABPOSITION
+    public static final java.lang.String EXTRA_KEY_LOGOUT
+    public static final java.lang.String EXTRA_KEY_JPUSH
+    public static final java.lang.String EXTRA_KEY_USER_ID
+    public static final java.lang.String EXTRA_KEY_ORDER_ID
+    public static final java.lang.String EXTRA_KEY_ORDER_OBJ
+    public static final java.lang.String EXTRA_KEY_ORDER_DELIVER_OBJ
+    public static final java.lang.String EXTRA_KEY_PRODUCT_LIST
+    public static final java.lang.String EXTRA_KEY_SCAN_RESULT_CODES
+    public static final java.lang.String EXTRA_KEY_SCAN_RESULT_ITEMS
+    public static final java.lang.String EXTRA_KEY_SCAN_RESULT_STANDERS
+    public static final java.lang.String EXTRA_KEY_FROM
+    public static final java.lang.String EXTRA_VALUE_PRODUCT
+    public static final java.lang.String EXTRA_KEY_PRODUCT_TYPE
+    public static final int DEFAULT_ILLEGAL_PRODUCT_TYPE
+    public static final java.lang.String EXTRA_ORDER_FROM_BUYER
+    public static final java.lang.String EXTRA_ORDER_FROM_SELLER
+    public static final java.lang.String EXTRA_ORDER_FROM
+    public static final java.lang.String EXTRA_KEY_TRADETYPE
+    public static final int REQUESTCODE_DELIVERED
+    public static final int RESULTCODE_OK
+    public static final java.lang.String SETTINGS_SP_NAME
+    public static final java.lang.String APP_ID
+    public static final java.lang.String RECEIVER_NO_LOGIN
+    public static final java.lang.String RECEIVER_SHOW_LOGIN
+    public static final java.lang.String SP_KEY_PHONE
+    public static final java.lang.String SP_KEY_REMEMBER_PWD
+    public static final java.lang.String SP_KEY_RM_TOKEN
+    public static final java.lang.String SP_KEY_FIRST_LAUNCH
+    public static final java.lang.String SP_KEY_VERSON_CODE
+    public static final java.lang.String WeChat_APP_ID
+    8:8:public Constant()
+com.socialbusiness.dev.orangebusiness.Manifest
+com.socialbusiness.dev.orangebusiness.Manifest$permission
+com.socialbusiness.dev.orangebusiness.MyApplication:
+    private static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.MainActivity:
+    private java.lang.String orderStr
+    304:304:public com.socialbusiness.dev.orangebusiness.model.User getUser()
+com.socialbusiness.dev.orangebusiness.activity.MainActivity$NotifyRefreshReceiver:
+    public static final java.lang.String BROADCAST_NOTIFY_REFRESH_VIEW
+    public static final java.lang.String BROADCAST_NOTIFY_CONVERSATION_CHANGED
+    public static final java.lang.String ISGROUP
+    public static final java.lang.String ISUSER
+    public static final java.lang.String TARGETID
+com.socialbusiness.dev.orangebusiness.activity.base.BaseActivity:
+    127:128:public void setHeaderTitleBarBg(int)
+    148:151:public void setTitleBg(int)
+    166:177:protected void showMessageByDialogOP(java.lang.String)
+    195:200:public void setRightTxt(java.lang.String,int,android.content.res.ColorStateList)
+    252:253:public void setTitleTextColor(int)
+    256:258:public void setRightIcon(int)
+    261:263:public void setLeftIcon(int)
+    266:269:public void setRightIconListener(android.view.View$OnClickListener)
+    272:275:public void hideHeaderView()
+    285:285:public void setRightIconTxt(int)
+com.socialbusiness.dev.orangebusiness.activity.base.BaseActivity$1
+com.socialbusiness.dev.orangebusiness.activity.contact.CustomRongSecActivity:
+    public static final java.lang.String PATH_GROUP
+    public static final java.lang.String REAL_GROUP_ID
+    public static final java.lang.String PATH_PRIVATE
+    public static final java.lang.String SCHEME
+    public static final java.lang.String PATH_conversation
+    public static final java.lang.String TARGETID
+    public static final java.lang.String TITLE
+com.socialbusiness.dev.orangebusiness.activity.contact.GroupDetailActivity:
+    private static final java.lang.String TAG
+    private static final int REQUEST_CODE_ADD_USER
+    private static final int REQUEST_CODE_EXIT
+    private static final int REQUEST_CODE_EXIT_DELETE
+    private static final int REQUEST_CODE_CLEAR_ALL_HISTORY
+    public static final java.lang.String EXTRA_KEY_GROUP_ID
+    public static final java.lang.String EXTRA_KEY_GROUP_NAME
+    private com.socialbusiness.dev.orangebusiness.util.KWAsyncTask mRequestTask
+com.socialbusiness.dev.orangebusiness.activity.contact.GroupDetailActivity$RefreshViewReceiver:
+    759:759:private GroupDetailActivity$RefreshViewReceiver(com.socialbusiness.dev.orangebusiness.activity.contact.GroupDetailActivity)
+com.socialbusiness.dev.orangebusiness.activity.contact.GroupListActivity:
+    private static final int REQUEST_CODE_CREATE_GROUP
+    private com.socialbusiness.dev.orangebusiness.util.KWAsyncTask mRequestTask
+com.socialbusiness.dev.orangebusiness.activity.contact.GroupListActivity$RefreshReceiver:
+    201:201:private GroupListActivity$RefreshReceiver(com.socialbusiness.dev.orangebusiness.activity.contact.GroupListActivity)
+com.socialbusiness.dev.orangebusiness.activity.login.RegisterStep1TabActivity:
+    public static final java.lang.String TAG
+    private static final int MY_PURCHASE
+    private static final int MY_SALES
+    private java.lang.String currentTag
+com.socialbusiness.dev.orangebusiness.activity.me.AddressListActivity:
+    public static final int REQUEST_CODE_UPDATE_ADDRESS
+com.socialbusiness.dev.orangebusiness.activity.me.LevelListActivity:
+    private int mTotalPage
+com.socialbusiness.dev.orangebusiness.activity.me.NoticeDetailActivity_Old
+com.socialbusiness.dev.orangebusiness.activity.me.NoticeDetailActivity_Old$1
+com.socialbusiness.dev.orangebusiness.activity.me.NoticeDetailActivity_Old$2
+com.socialbusiness.dev.orangebusiness.activity.me.NoticeListAcitivity
+com.socialbusiness.dev.orangebusiness.activity.me.NoticeListAcitivity$1
+com.socialbusiness.dev.orangebusiness.activity.me.VipListActivity:
+    private static final int SEARCH_TAG
+    private static final int DEFULT_TAG
+com.socialbusiness.dev.orangebusiness.activity.order.MultiUploadPayImageActivity$2:
+    77:77:public void updatePayImage()
+com.socialbusiness.dev.orangebusiness.activity.order.MyCaptureActivity:
+    public static final java.lang.String TAG
+    public static final java.lang.String EXTRA_KEY_CONTENT
+    public static final java.lang.String EXTRA_KEY_DATA
+    private static final int RESTART_DELAY
+    public static final java.lang.String COMEFROME
+com.socialbusiness.dev.orangebusiness.activity.order.OrderDetailActivity:
+    539:545:private void goMainActivity()
+com.socialbusiness.dev.orangebusiness.activity.order.OrderSearchActivity:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity:
+    public static final java.lang.String TAG
+    public static final java.lang.String EXPRESS
+    public static final java.lang.String REMARK
+    159:176:private void setValues()
+    331:340:private void savePreferences()
+    465:518:private void callAPIAddOrder()
+    66:66:static synthetic com.socialbusiness.dev.orangebusiness.component.FooterViewPlaceAnOrder access$800(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity)
+    66:66:static synthetic boolean access$1700(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity)
+    66:66:static synthetic java.util.List access$1800(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity)
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity$10
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity$11
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity$3:
+    272:272:public void updatePayImage()
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderActivity$5
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity:
+    public static final java.lang.String TAG
+    197:218:private void callAPIListAddress()
+    233:238:private double getTotalMoney()
+    309:321:private void setDefaultAddress(java.util.List)
+    49:49:static synthetic java.util.List access$302(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity,java.util.List)
+    49:49:static synthetic java.util.List access$300(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity)
+    49:49:static synthetic void access$400(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity,java.util.List)
+    49:49:static synthetic com.socialbusiness.dev.orangebusiness.model.Address access$500(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity)
+    49:49:static synthetic void access$600(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity,com.socialbusiness.dev.orangebusiness.model.Address)
+    49:49:static synthetic double access$700(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity)
+    49:49:static synthetic android.widget.TextView access$800(com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity)
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity$2
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity$3
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity$4:
+    227:229:public void onEditChange(com.socialbusiness.dev.orangebusiness.model.ShopCartItem)
+com.socialbusiness.dev.orangebusiness.activity.order.PlaceAnOrderEnsureActivity$OnEditTextChange:
+    public abstract void onEditChange(com.socialbusiness.dev.orangebusiness.model.ShopCartItem)
+com.socialbusiness.dev.orangebusiness.activity.order.PurchaseOrderActivity:
+    public static final java.lang.String TAG
+    private static final int WAITING_CONFIRM
+    private static final int WAITING_2PAY
+    private static final int WAITING_DELIVER
+    private static final int DELIVER_DONE
+    private static final int RECEIPTED
+com.socialbusiness.dev.orangebusiness.activity.order.ReceiptedActivity:
+    public static final java.lang.String TAG
+    private java.lang.String lowerLevelUserId
+com.socialbusiness.dev.orangebusiness.activity.order.SalesDeliveredOrderActivity:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.order.SalesInputOrderDetailActivity:
+    private static final int REQUEST_CODE_SCAN_ExPRESS_START
+    private static final int REQUEST_CODE_SCAN_ExPRESS_END
+    private static final int REQUEST_CODE_SCAN_PRODUCT_CODES
+    private java.util.List mListViewList
+    368:372:private void goToMainActivity()
+com.socialbusiness.dev.orangebusiness.activity.order.SalesOrderDetailActivity:
+    private static final int REQUEST_CODE_SCAN_ExPRESS_START
+    private static final int REQUEST_CODE_SCAN_ExPRESS_END
+    private static final int REQUEST_CODE_SCAN_PRODUCT_CODES
+com.socialbusiness.dev.orangebusiness.activity.order.SalesWaiting2PayOrderActivity:
+    public static final java.lang.String TAG
+    public static final int REQUEST_CODE
+com.socialbusiness.dev.orangebusiness.activity.order.SalesWaitingConfirmOrderActivity:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.order.SalesWaitingDeliverOrderActivity:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.order.SalseWaiting2PayOrderTabActivity:
+    public static final java.lang.String TAG
+    private static final int MY_PURCHASE
+    private static final int MY_SALES
+    private java.lang.String currentTag
+com.socialbusiness.dev.orangebusiness.activity.order.SalseWaitingDeliverTabActivity:
+    public static final java.lang.String TAG
+    private static final int MY_PURCHASE
+    private static final int MY_SALES
+    private java.lang.String currentTag
+com.socialbusiness.dev.orangebusiness.activity.order.ScanProductListActivity:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.activity.product.ProductDetailActivity:
+    public static final java.lang.String TAG
+    private com.socialbusiness.dev.orangebusiness.activity.product.ProductDetailActivity$ImageAdapter mImageAdapter
+com.socialbusiness.dev.orangebusiness.activity.product.ProductDetailActivity$ImageAdapter
+com.socialbusiness.dev.orangebusiness.activity.product.ProductDetailActivity$ImageAdapter$ViewHolder
+com.socialbusiness.dev.orangebusiness.adapter.AdapterBase:
+    41:46:public void appendToTopList(java.util.List)
+    49:51:public void clear()
+com.socialbusiness.dev.orangebusiness.adapter.ConfirmOrderAdapter:
+    72:72:public java.lang.String getItemIdString(int)
+com.socialbusiness.dev.orangebusiness.adapter.ContactAdapter:
+    52:53:public void setGroupMembers(java.util.List)
+com.socialbusiness.dev.orangebusiness.adapter.CourseClassifyAdapter
+com.socialbusiness.dev.orangebusiness.adapter.OrderAdapter:
+    91:92:public void setIsSelectedList(java.util.ArrayList)
+    156:156:public java.lang.String getGroupIdString(int)
+com.socialbusiness.dev.orangebusiness.adapter.ProductAdapter:
+    27:28:public void setProductList(java.util.List)
+com.socialbusiness.dev.orangebusiness.api.APIManager:
+    public static final java.lang.String TAG
+    public static final java.lang.String HOST
+    public static final java.lang.String HTTP_HOST
+    public static final java.lang.String BASE_URL
+    public static final int REQUEST_TIMEOUT_SECONDS
+    public static final java.lang.String KEY_PAGE_SIZE
+    public static final java.lang.String KEY_PAGE
+    public static final int PAGE_SIZE
+    public static final java.lang.String MAX_PAGE_SIZE
+    private static final int CACHE_SIZE
+    public static final java.lang.String STATE_ACOUNT
+    public static final java.lang.String PRODUCT_DETAIL_URL
+    public static final java.lang.String KUAIDI_URL
+    450:470:private com.socialbusiness.dev.orangebusiness.api.RequestAction getUserBaseInfo(java.lang.String,java.util.ArrayList,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    485:489:public com.socialbusiness.dev.orangebusiness.api.RequestAction userBaseInfoByPhone(java.util.ArrayList,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    503:514:public com.socialbusiness.dev.orangebusiness.api.RequestAction userNameByPhone(java.lang.String,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    609:613:public com.socialbusiness.dev.orangebusiness.api.RequestAction userBaseInfoByHxAccount(java.util.ArrayList,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    1001:1009:public com.socialbusiness.dev.orangebusiness.api.RequestAction newOrder(com.socialbusiness.dev.orangebusiness.model.Order$OrderAdd,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    1113:1121:public com.socialbusiness.dev.orangebusiness.api.RequestAction transOrder(java.lang.String,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    1270:1287:public void updatePayImage(java.util.Hashtable,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    1683:1693:public com.socialbusiness.dev.orangebusiness.api.RequestAction getNotice(java.util.Hashtable,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    1894:1904:public com.socialbusiness.dev.orangebusiness.api.RequestAction getCourse(java.util.Hashtable,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    2074:2075:public com.socialbusiness.dev.orangebusiness.api.RequestAction getRongyunToken(com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+    2160:2161:public com.socialbusiness.dev.orangebusiness.api.RequestAction loginflag(java.util.Hashtable,com.android.volley.Response$ErrorListener,com.android.volley.Response$Listener)
+com.socialbusiness.dev.orangebusiness.api.APIManager$10
+com.socialbusiness.dev.orangebusiness.api.APIManager$11
+com.socialbusiness.dev.orangebusiness.api.APIManager$30
+com.socialbusiness.dev.orangebusiness.api.APIManager$35
+com.socialbusiness.dev.orangebusiness.api.APIManager$56
+com.socialbusiness.dev.orangebusiness.api.APIManager$64
+com.socialbusiness.dev.orangebusiness.api.APIManager$72
+com.socialbusiness.dev.orangebusiness.api.APIManager$76
+com.socialbusiness.dev.orangebusiness.api.RequestAction:
+    public static final java.lang.String TAG
+    public static final java.lang.String SET_COOKIE_KEY
+    public static final java.lang.String COOKIE_KEY
+    public static final java.lang.String SESSID
+    202:202:public java.util.LinkedList getRequestParams()
+com.socialbusiness.dev.orangebusiness.api.RequestParam:
+    public static final java.lang.String KEY_METHOD
+    public static final java.lang.String KEY_TIMESTAMP
+    public static final java.lang.String KEY_TOKEN
+com.socialbusiness.dev.orangebusiness.component.AdHeaderView
+com.socialbusiness.dev.orangebusiness.component.AdHeaderView$1
+com.socialbusiness.dev.orangebusiness.component.AdHeaderView$AdHeaderPagerAdapter
+com.socialbusiness.dev.orangebusiness.component.AddProductItem:
+    34:36:public AddProductItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.AddressItem:
+    45:48:public AddressItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.AlertDialog:
+    private java.lang.String voicePath
+com.socialbusiness.dev.orangebusiness.component.BaseDialog:
+    21:25:public BaseDialog(android.content.Context,int)
+com.socialbusiness.dev.orangebusiness.component.CircleImageView:
+    private static final int COLORDRAWABLE_DIMENSION
+    private static final int DEFAULT_BORDER_WIDTH
+    private static final int DEFAULT_BORDER_COLOR
+com.socialbusiness.dev.orangebusiness.component.ConfirmOrderItem:
+    44:46:public ConfirmOrderItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.CourseClassifyItem
+com.socialbusiness.dev.orangebusiness.component.CourseClassifyItem$1
+com.socialbusiness.dev.orangebusiness.component.CoursewareItem:
+    26:28:public CoursewareItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.FixedSpeedScroller:
+    8:13:public FixedSpeedScroller(android.content.Context)
+    44:44:public int getmDuration()
+    48:48:public boolean isUseCustomDuration()
+com.socialbusiness.dev.orangebusiness.component.FixedViewPager:
+    private static final java.lang.String TAG
+    private static final int SCROLL_DURATION
+    private static final int AUTO_SCROLL_DELAY
+    178:178:public boolean isLooper()
+    220:223:public void release()
+com.socialbusiness.dev.orangebusiness.component.FooterViewPlaceAnOrder:
+    30:32:public FooterViewPlaceAnOrder(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.FooterViewPlaceAnOrderEnsure:
+    26:28:public FooterViewPlaceAnOrderEnsure(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.IndecatorView:
+    37:38:public void setIndicatorColor(int,int)
+    41:53:public void setIndicatorColor(int,int,int)
+    114:114:public void release()
+com.socialbusiness.dev.orangebusiness.component.LevelItem:
+    29:32:public LevelItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.MultiUploadPayImageLayout:
+    67:68:public void setFeightTotalLayoutVisible()
+    267:286:private void loadVoucherImage(com.socialbusiness.dev.orangebusiness.model.Order)
+    310:325:public void loadVoucherImage(java.util.List,boolean)
+com.socialbusiness.dev.orangebusiness.component.MultiUploadPayImageLayout$OnUploadFinsh:
+    public abstract void fial(java.lang.String)
+com.socialbusiness.dev.orangebusiness.component.MultiUploadPayImageLayout$UploadPVIClickListener:
+    public abstract void updatePayImage()
+com.socialbusiness.dev.orangebusiness.component.NoticeItem:
+    24:26:public NoticeItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.OhTextView
+com.socialbusiness.dev.orangebusiness.component.OrderChildViewItem:
+    55:57:public OrderChildViewItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.OrderConfirmFooter:
+    68:108:public OrderConfirmFooter(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.OrderConfirmHeader:
+    33:35:public OrderConfirmHeader(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.OrderDetailFooterView:
+    85:130:public OrderDetailFooterView(android.content.Context,android.util.AttributeSet)
+    430:434:public void setTextMargin()
+com.socialbusiness.dev.orangebusiness.component.OrderDetailItem:
+    33:35:public OrderDetailItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.OrderGroupViewItem:
+    58:61:public OrderGroupViewItem(android.content.Context,android.util.AttributeSet)
+    104:109:private void setCancelOrderTextColor()
+com.socialbusiness.dev.orangebusiness.component.PlaceAnOrderItem:
+    41:43:public PlaceAnOrderItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.PositionCalculator
+com.socialbusiness.dev.orangebusiness.component.ProductItem:
+    35:37:public ProductItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.SalesOrderDetailItem:
+    49:52:public SalesOrderDetailItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.SalesOrderFooterView:
+    68:70:public SalesOrderFooterView(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer$1
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer$2
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer$3
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer$MyTimer
+com.socialbusiness.dev.orangebusiness.component.ScrollViewContainer$MyTimer$MyTask
+com.socialbusiness.dev.orangebusiness.component.ShoppingCartItem:
+    54:122:public ShoppingCartItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.TabIndicator:
+    private static final java.lang.String TAG
+    private int mLastOffset
+com.socialbusiness.dev.orangebusiness.component.ViewStaticProperties
+com.socialbusiness.dev.orangebusiness.component.VipItem:
+    29:31:public VipItem(android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.WaitingHandleOrderItem
+com.socialbusiness.dev.orangebusiness.component.headerlistview.HeaderListView:
+    private static final int FADE_DELAY
+    private static final int FADE_DURATION
+    303:304:public void addHeaderView(android.view.View)
+    307:308:public void removeHeaderView(android.view.View)
+com.socialbusiness.dev.orangebusiness.component.headerlistview.HeaderListView$InternalListView:
+    320:322:public HeaderListView$InternalListView(com.socialbusiness.dev.orangebusiness.component.headerlistview.HeaderListView,android.content.Context,android.util.AttributeSet)
+com.socialbusiness.dev.orangebusiness.component.indicator.IconPageIndicator:
+    155:157:public void setViewPager(android.support.v4.view.ViewPager,int)
+com.socialbusiness.dev.orangebusiness.component.indicator.IconPagerAdapter:
+    public abstract int getCount()
+com.socialbusiness.dev.orangebusiness.component.indicator.IcsLinearLayout:
+    private static final int LL_DIVIDER
+    private static final int LL_SHOW_DIVIDER
+    private static final int LL_DIVIDER_PADDING
+com.socialbusiness.dev.orangebusiness.component.indicator.PageIndicator:
+    public abstract void setViewPager(android.support.v4.view.ViewPager)
+    public abstract void setViewPager(android.support.v4.view.ViewPager,int)
+    public abstract void setCurrentItem(int)
+    public abstract void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    public abstract void notifyDataSetChanged()
+com.socialbusiness.dev.orangebusiness.config.Constance:
+    public static final java.lang.String WEB_DETAIL
+    public static final java.lang.String WEB_ACTIVITY_TITLE
+    public static final java.lang.String ISSELLER
+    public static final java.lang.String PayMoney
+    public static final java.lang.String PayRemark
+    public static final java.lang.String PayImages
+    public static final java.lang.String OrderFreight
+    public static final java.lang.String TotalFee
+    public static final java.lang.String TransFee
+    public static final java.lang.String OrderIds
+    public static final java.lang.String INTENT_ONCANCELORDER_SECCUS
+    public static final java.lang.String INTENT_ONADDRESSREFRESH_SECCUS
+    public static final java.lang.String COMEFROM
+    12:12:public Constance()
+com.socialbusiness.dev.orangebusiness.db.ShopCartDbHelper:
+    private static final int DB_VERSION
+    private static final java.lang.String DB_NAME
+    private static final java.lang.String TABLE_NAME
+    private static final java.lang.String PAYIMAGE_TABLE_NAME
+com.socialbusiness.dev.orangebusiness.fragment.base.BaseFragment:
+    135:136:public void showOrderTatol()
+com.socialbusiness.dev.orangebusiness.fragment.mall.MallFrament:
+    453:463:public void getShopingCart()
+com.socialbusiness.dev.orangebusiness.fragment.message.ConversationFragment
+com.socialbusiness.dev.orangebusiness.fragment.message.CustomConversationListFragment:
+    27:28:public void setTotalUnRead()
+com.socialbusiness.dev.orangebusiness.fragment.message.MessageFragment
+com.socialbusiness.dev.orangebusiness.fragment.message.TabConversationListFrament:
+    24:24:public com.socialbusiness.dev.orangebusiness.fragment.message.CustomConversationListFragment getList()
+com.socialbusiness.dev.orangebusiness.fragment.order.DeliverDoneFragment:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.order.MyPurchaseFragment:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.order.MySalesFragment:
+    public static final java.lang.String TAG
+    public static final int TAG_INT
+com.socialbusiness.dev.orangebusiness.fragment.order.OrderFragment:
+    public static final java.lang.String TAG
+    private static final int MY_PURCHASE
+    private static final int MY_SALES
+com.socialbusiness.dev.orangebusiness.fragment.order.ReceiptedFragment:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.order.SalesUpLoadPayOrderFament:
+    public static final java.lang.String TAG
+    public static final int REQUEST_CODE
+com.socialbusiness.dev.orangebusiness.fragment.order.SalesWaitingPayOrderFrament:
+    public static final java.lang.String TAG
+    public static final int REQUEST_CODE
+com.socialbusiness.dev.orangebusiness.fragment.order.SalseWaitingDeliverNoTransitionFrament:
+    public static final java.lang.String TAG
+    public static final int MULTI_TYPE
+    public static final int MERGE_TYPE
+com.socialbusiness.dev.orangebusiness.fragment.order.SalseWaitingDeliverTransitionFrament:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.order.Waiting2PayFragment:
+    public static final java.lang.String TAG
+    184:198:private java.lang.String getIds()
+com.socialbusiness.dev.orangebusiness.fragment.order.WaitingConfirmFragment:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.order.WaitingDeliverFragment:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.fragment.product.ProductFragment
+com.socialbusiness.dev.orangebusiness.fragment.product.ProductFragment$1
+com.socialbusiness.dev.orangebusiness.fragment.product.ProductFragment$2
+com.socialbusiness.dev.orangebusiness.fragment.product.ProductFragment$3
+com.socialbusiness.dev.orangebusiness.fragment.product.ProductFragment$4
+com.socialbusiness.dev.orangebusiness.fragment.register.UserRegisterFrament:
+    private static final int UASER_REGISTER_TYPE
+    private static final int ENTERPRISE_REGISTER_TYPE
+com.socialbusiness.dev.orangebusiness.manager.GroupManager
+com.socialbusiness.dev.orangebusiness.manager.SettingsManager:
+    public static final java.lang.String IS_DESTROY_LOGOUT
+    52:52:public static com.socialbusiness.dev.orangebusiness.manager.SettingsManager getInstance()
+    100:100:public boolean getLogDestroyFlag()
+    130:130:public boolean isFirstLaunch()
+    134:135:public void setFirstLaunchDone()
+    138:138:public int getVersionCode()
+    142:143:public void setVersionCode(int)
+    166:167:public static void saveEasemodPwd(java.lang.String)
+    170:174:public static java.lang.String getEasemodPwd()
+com.socialbusiness.dev.orangebusiness.receiver.CheckSDReceiver
+com.socialbusiness.dev.orangebusiness.receiver.MyJPushReceiver:
+    public static final java.lang.String TAG
+com.socialbusiness.dev.orangebusiness.receiver.RongCloudProvidersListener:
+    public static final java.lang.String UNREAD_COUNT_KEY
+com.socialbusiness.dev.orangebusiness.util.AndroidUtil:
+    37:37:public AndroidUtil()
+    40:46:public static boolean isIntentAvailable(android.content.Context,android.content.Intent)
+    51:57:public static android.content.Intent getURLIntent(java.lang.String)
+    72:73:public static int px2dip(android.content.Context,float)
+    77:78:public static int windowHeight(android.content.Context)
+    84:95:public static android.graphics.Bitmap zoomImage(android.graphics.Bitmap,double,double)
+    100:109:public static boolean isImageFile(java.lang.String)
+    113:116:public static boolean isBitmapAvailable(android.graphics.Bitmap)
+    144:173:public static java.util.Set getContactPhones(android.content.Context)
+    177:184:public static boolean toAppStoreQuery(android.content.Context,java.lang.String)
+    189:196:public static boolean toAppStoreDetail(android.content.Context,java.lang.String)
+    203:218:public static boolean isNetworkAvailable(android.content.Context)
+    222:234:public static boolean isPad(android.content.Context)
+    238:242:public static void setError(android.widget.EditText,int)
+    301:303:public static void mockClickFromLauncher(android.content.Context,java.lang.Class)
+    306:308:public static android.content.Intent getMockClickFromLauncherIntent(android.content.Context,java.lang.Class)
+    312:319:public static boolean isAppRunning(android.content.Context)
+    323:337:public static boolean isLauncherRunnig(android.content.Context)
+    341:354:private static java.util.List getAllTheLauncher(android.content.Context)
+com.socialbusiness.dev.orangebusiness.util.BaseHttp:
+    public static final java.lang.String TAG
+    private static final int TIME_OUT
+    private static final java.lang.String PREFIX
+    private static final java.lang.String LINE_END
+    private static final java.lang.String CONTENT_TYPE
+    private static final java.lang.String CHARSET
+    26:28:private BaseHttp()
+    51:51:public static synchronized java.lang.String postForm(java.lang.String,java.util.Map,java.util.Map)
+    75:150:public static synchronized java.lang.String post(java.lang.String,java.util.Map,java.util.Map)
+com.socialbusiness.dev.orangebusiness.util.CommonUtil:
+    private static final java.lang.String TAG
+    68:68:public CommonUtil()
+    77:77:public static varargs boolean isNull(java.lang.Object[])
+    82:101:public static varargs boolean isNull(java.lang.Boolean,java.lang.Object[])
+    105:114:public static varargs boolean isZeroOrLess(int[])
+    118:122:public static boolean isEqualsString(java.lang.String,java.lang.String)
+    160:164:public static void sendEmail(android.content.Context,java.lang.String)
+    167:174:public static void openPDF(android.content.Context,java.lang.String)
+    182:182:public static boolean hasMountSDCard()
+    192:196:public static long getExternalStorageTotalSize()
+    205:209:public static long getExternalStorageFreeSize()
+    213:213:public static int computePercentOfScreenWidth(android.content.Context,int)
+    217:217:public static int computePercentOfScreenHeight(android.content.Context,int)
+    247:267:public static int getScreenHeight(android.content.Context)
+    275:275:public static int getScreenHeightWithoutStatusBarAndAppTitleBar(android.content.Context)
+    292:298:public static int getStatusBarHeight(android.content.Context)
+    307:331:public static boolean isPad(android.content.Context)
+    335:342:public static boolean isSmallPhone(android.content.Context)
+    351:358:public static int getHeightByText(java.lang.String,int)
+    362:369:public static boolean isMediumDensity(android.content.Context)
+    374:380:public static java.lang.String toMd5(byte[])
+    385:389:public static java.lang.String toHexString(byte[],java.lang.String)
+    399:400:public static float px2dip(android.content.Context,int)
+    423:423:public static java.lang.String getOSVersion(android.content.Context)
+    433:433:public static int getAPILevel(android.content.Context)
+    444:444:public static float getDensity(android.content.Context)
+    455:455:public static int getDensityDpi(android.content.Context)
+    468:468:public static int getOrientation(android.content.Context)
+    480:486:public static java.lang.String generateRandomNumber(int)
+    497:497:public static java.util.Locale getSystemLocale(android.content.Context)
+    508:517:public static java.lang.String getAppVersion(android.content.Context)
+    528:540:public static int countRunningActivities(android.content.Context)
+    544:554:public static java.lang.String getImagePathFromUri(android.app.Activity,android.net.Uri)
+    558:576:public static java.lang.String getFilePathFromUri(android.content.Context,android.net.Uri)
+    595:597:public static java.lang.String date2String(java.util.Date)
+    601:611:public static java.util.Date convertDateFormat(java.lang.String)
+    615:629:private static java.lang.String getDayOfMonthSuffix(int)
+    653:682:public static int unZipFile(java.io.File,java.lang.String)
+    695:729:public static java.io.File getRealFileName(java.lang.String,java.lang.String)
+    753:759:public static boolean isNetworkAvailable(android.content.Context)
+    763:770:public static boolean isHighResolutionDevice(android.content.Context)
+    776:784:public static boolean isGPSAvailable(android.content.Context)
+    789:793:public static int getMetricsWidth(android.content.Context)
+    797:801:public static int getMetricsHeight(android.content.Context)
+    829:829:public static java.lang.String getDeviceModel()
+    844:844:public static boolean isEnableAccountsBackgroundData(android.content.Context)
+    848:851:public static void hideSoftKeyboard(android.widget.EditText)
+    854:857:public static void showSoftKeyboard(android.widget.EditText)
+    867:867:public static java.lang.String transformTimeFormat(long)
+    881:892:public static java.lang.String transformTimeFormat(long,boolean)
+    896:898:public static java.lang.String getIMEI(android.content.Context)
+    908:914:public static java.lang.String replaceBlank(java.lang.String)
+    918:922:public static java.lang.String trim(java.lang.String)
+    963:964:public static void clearWebViewCache(android.content.Context)
+    977:994:public static int clearCacheFolder(java.io.File,long)
+    1010:1027:public static boolean keepActivities(android.content.Context)
+    1031:1034:public static boolean isBelow480WidthDevice(android.content.Context)
+    1038:1075:public static void removeWebViewZoomControlBar(android.webkit.WebView)
+    1079:1120:public static android.graphics.Point getScreenResolution(android.view.WindowManager)
+    1125:1126:public static java.lang.StringBuffer getHtmlTemplate(android.content.Context)
+    1131:1166:public static java.lang.StringBuffer getHtmlTemplateByName(android.content.Context,java.lang.String)
+    1170:1174:public static java.lang.String getReplaceHtmlTemplateData(android.content.Context,java.lang.String)
+    1184:1231:public static java.lang.String clearHtmlTag(java.lang.String)
+com.socialbusiness.dev.orangebusiness.util.DialogUtil:
+    18:20:private DialogUtil()
+    33:33:public static android.app.Dialog showConfirm(android.app.Activity,int,int,android.content.DialogInterface$OnClickListener,android.content.DialogInterface$OnClickListener)
+    39:39:public static android.app.Dialog showConfirm(android.app.Activity,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,android.content.DialogInterface$OnClickListener)
+    44:44:public static android.app.Dialog showConfirm(android.app.Activity,int,int,int,int,android.content.DialogInterface$OnClickListener,android.content.DialogInterface$OnClickListener)
+    97:100:public static android.app.Dialog showEditWeiboDialog(android.app.Activity)
+com.socialbusiness.dev.orangebusiness.util.FastBlur
+com.socialbusiness.dev.orangebusiness.util.FileUtil:
+    28:28:public FileUtil()
+    35:40:public static byte[] readFromFile(java.io.File)
+    45:49:public static boolean writeToFile(java.io.File,byte[])
+    134:137:public static java.lang.String getDirByUrl(java.lang.String,java.lang.String)
+    146:147:public static java.lang.String getFileNameByUrl(java.lang.String)
+    158:164:public static java.lang.String getDirNameByFile(java.lang.String)
+    174:186:public static java.lang.String getFileNameByPath(java.lang.String,boolean)
+    190:211:public static void delete(java.io.File)
+    218:219:public static void cleanProjectCacheFile(android.content.Context)
+    227:228:public static void cleanInternalCache(android.content.Context)
+    235:236:public static void cleanDatabases(android.content.Context)
+    244:247:public static void cleanDatabasesByName(android.content.Context,java.lang.String)
+    254:255:public static void cleanSharedPreference(android.content.Context)
+    262:263:public static void cleanFiles(android.content.Context)
+    270:274:public static void cleanExternalCacheFile(android.content.Context)
+    281:282:public static void cleanCustomCache(java.lang.String)
+    290:298:public static varargs void cleanApplicationData(android.content.Context,java.lang.String[])
+    301:341:public static boolean copyFile(java.io.File,java.io.File)
+    345:361:public static boolean saveBitmapToJPG(android.graphics.Bitmap,java.lang.String)
+    370:383:public static java.io.File touchFile(java.lang.String)
+    393:437:public static boolean downloadFile(java.lang.String,java.io.File)
+    441:467:public static void copyAssetFile(android.content.Context,java.lang.String,java.io.File)
+    470:478:public static void closeStream(java.io.Closeable)
+com.socialbusiness.dev.orangebusiness.util.ImageUtil:
+    25:25:public ImageUtil()
+    87:115:public static android.graphics.Bitmap blurBitmap(android.graphics.Bitmap,android.content.Context)
+    122:135:public static void blur(android.graphics.Bitmap,android.view.View)
+com.socialbusiness.dev.orangebusiness.util.KWAsyncTask:
+    private static final java.lang.String TAG
+    private static final int WHAT_onPreExecute
+    private static final int WHAT_onProgressUpdate
+    private static final int WHAT_onPostExecute
+    private static final int WHAT_onCancelled
+    25:28:public final varargs void start(java.lang.Object[])
+    60:61:protected final void publishProgress(int)
+com.socialbusiness.dev.orangebusiness.util.KWTimer:
+    34:40:public void stop()
+com.socialbusiness.dev.orangebusiness.util.ListUtil:
+    9:9:public ListUtil()
+com.socialbusiness.dev.orangebusiness.util.Log:
+    public static final int VERBOSE
+    public static final int DEBUG
+    public static final int INFO
+    public static final int WARN
+    public static final int ERROR
+    public static final int ASSERT
+    public static final int NOLOG
+    public static final int LOG_LEVEL
+    15:16:private Log()
+    28:28:public static int v(java.lang.String,java.lang.String)
+    42:42:public static int v(java.lang.String,java.lang.String,java.lang.Throwable)
+    69:69:public static int d(java.lang.String,java.lang.String,java.lang.Throwable)
+    96:96:public static int i(java.lang.String,java.lang.String,java.lang.Throwable)
+    109:109:public static int w(java.lang.String,java.lang.String)
+    123:123:public static int w(java.lang.String,java.lang.String,java.lang.Throwable)
+    136:136:public static int w(java.lang.String,java.lang.Throwable)
+    163:163:public static int e(java.lang.String,java.lang.String,java.lang.Throwable)
+com.socialbusiness.dev.orangebusiness.util.MD5:
+    private static final java.lang.String ALGORITHM
+    23:24:private MD5()
+com.socialbusiness.dev.orangebusiness.util.NotificationUtil:
+    public static final java.lang.String TAG
+    44:49:public void show(int,java.lang.String,java.lang.String,boolean,android.net.Uri,android.app.PendingIntent)
+    52:57:public void show(int,android.widget.RemoteViews,boolean,boolean,android.net.Uri,android.app.PendingIntent)
+    61:83:private void show3(int,java.lang.String,java.lang.String,boolean,android.net.Uri,android.app.PendingIntent)
+    87:101:private void show3(int,android.widget.RemoteViews,boolean,boolean,android.net.Uri,android.app.PendingIntent)
+    113:123:private void show2(int,java.lang.String,java.lang.String,boolean,android.net.Uri,android.app.PendingIntent)
+    137:147:private void show2(int,android.widget.RemoteViews,boolean,boolean,android.net.Uri,android.app.PendingIntent)
+    159:176:private void show1(int,java.lang.String,java.lang.String,boolean,android.net.Uri,android.app.PendingIntent)
+    188:203:private void show1(int,android.widget.RemoteViews,boolean,boolean,android.net.Uri,android.app.PendingIntent)
+    206:207:public void hide(int)
+com.socialbusiness.dev.orangebusiness.util.SharedPreferencesUtil
+com.socialbusiness.dev.orangebusiness.util.StringUtil:
+    public static final java.lang.String COMMON_DATE_FORMAT
+    public static final java.lang.String DOUBLE_ZERO
+    20:20:public StringUtil()
+    25:25:public static java.lang.String stringFromDate(java.util.Date,java.lang.String)
+    29:36:public static java.util.Date dateFromString(java.lang.String,java.lang.String)
+    71:71:public static java.lang.String sumFromString(java.lang.String)
+com.socialbusiness.dev.orangebusiness.util.ToastUtil:
+    12:12:public ToastUtil()
+    17:21:public static void show(android.content.Context,int)
+com.socialbusiness.dev.orangebusiness.util.UserGroupUtil:
+    28:28:public UserGroupUtil()
+    52:67:public static void getFriends(android.content.Context)
+com.socialbusiness.dev.orangebusiness.util.UserGroupUtil$3
+com.socialbusiness.dev.orangebusiness.util.UserGroupUtil$4
+com.socialbusiness.dev.orangebusiness.util.Validator:
+    private static final java.lang.String EMAIL_PATTERN
+    private static final java.lang.String TRUE_PHONE
+    private static final java.lang.String TRUE_TEL
+    10:10:public Validator()
+    28:28:public static boolean isEmail(java.lang.String)
+    39:42:public static boolean isTel(java.lang.String)
+com.socialbusiness.dev.orangebusiness.util.WeChatUtil:
+    19:19:public WeChatUtil()
+com.socialbusiness.dev.orangebusiness.wxapi.WXEntryActivity:
+    public static final java.lang.String TAG
+de.greenrobot.dao.AbstractDeepDao
+de.greenrobot.dao.BuildConfig
+de.greenrobot.dao.DaoLog:
+    private static final java.lang.String TAG
+    public static final int VERBOSE
+    public static final int DEBUG
+    public static final int INFO
+    public static final int WARN
+    public static final int ERROR
+    public static final int ASSERT
+    27:27:public DaoLog()
+    38:38:public static boolean isLoggable(int)
+    42:42:public static java.lang.String getStackTraceString(java.lang.Throwable)
+    46:46:public static int println(int,java.lang.String)
+    50:50:public static int v(java.lang.String)
+    54:54:public static int v(java.lang.String,java.lang.Throwable)
+    62:62:public static int d(java.lang.String,java.lang.Throwable)
+    70:70:public static int i(java.lang.String,java.lang.Throwable)
+    82:82:public static int w(java.lang.Throwable)
+    86:86:public static int e(java.lang.String)
+de.greenrobot.dao.DbUtils
+de.greenrobot.dao.FuncProperty
+de.greenrobot.dao.FuncProperty$CountProperty
+de.greenrobot.dao.FuncProperty$MaxProperty
+de.greenrobot.dao.FuncProperty$MinProperty
+de.greenrobot.dao.IQueryDaoAccess:
+    public abstract java.lang.Object loadCurrent(android.database.Cursor,int,boolean)
+de.greenrobot.dao.IQueryDaoAccess$InternalQueryDaoAccess:
+    28:28:public java.lang.Object loadCurrent(android.database.Cursor,int,boolean)
+    40:40:public de.greenrobot.dao.internal.TableStatements getStatements()
+de.greenrobot.dao.IQueryDaoAccess$InternalQueryDeepDaoAccess
+de.greenrobot.dao.InternalUnitTestDaoAccess
+de.greenrobot.dao.Property:
+    public java.lang.String asName
+    50:51:public de.greenrobot.dao.Property as(java.lang.String)
+    63:63:public de.greenrobot.dao.query.WhereCondition$UpdateCondition obtainUpdateCondition(java.lang.Object)
+    67:67:public de.greenrobot.dao.query.WhereCondition$UpdateCondition obtainUpdateCondition(de.greenrobot.dao.Property)
+    78:78:public de.greenrobot.dao.query.WhereCondition eq(de.greenrobot.dao.Property)
+    85:85:public de.greenrobot.dao.query.WhereCondition notEq(java.lang.Object)
+    89:89:public de.greenrobot.dao.query.WhereCondition notEq(de.greenrobot.dao.Property)
+    97:97:public de.greenrobot.dao.query.WhereCondition like(java.lang.String)
+    101:101:public de.greenrobot.dao.query.WhereCondition like(de.greenrobot.dao.Property)
+    108:109:public de.greenrobot.dao.query.WhereCondition between(java.lang.Object,java.lang.Object)
+    116:118:public varargs de.greenrobot.dao.query.WhereCondition in(java.lang.Object[])
+    125:125:public de.greenrobot.dao.query.WhereCondition in(java.util.Collection)
+    132:134:public varargs de.greenrobot.dao.query.WhereCondition notIn(java.lang.Object[])
+    141:141:public de.greenrobot.dao.query.WhereCondition notIn(java.util.Collection)
+    148:148:public de.greenrobot.dao.query.WhereCondition gt(java.lang.Object)
+    152:152:public de.greenrobot.dao.query.WhereCondition gt(de.greenrobot.dao.Property)
+    159:159:public de.greenrobot.dao.query.WhereCondition lt(java.lang.Object)
+    163:163:public de.greenrobot.dao.query.WhereCondition lt(de.greenrobot.dao.Property)
+    170:170:public de.greenrobot.dao.query.WhereCondition ge(java.lang.Object)
+    174:174:public de.greenrobot.dao.query.WhereCondition ge(de.greenrobot.dao.Property)
+    182:182:public de.greenrobot.dao.query.WhereCondition le(java.lang.Object)
+    186:186:public de.greenrobot.dao.query.WhereCondition le(de.greenrobot.dao.Property)
+    193:193:public de.greenrobot.dao.query.WhereCondition isNull()
+    200:200:public de.greenrobot.dao.query.WhereCondition isNotNull()
+    207:207:public de.greenrobot.dao.query.WhereCondition andEq(java.lang.Object)
+    214:214:public de.greenrobot.dao.query.WhereCondition andEq(java.lang.Object,java.util.Objects)
+    222:222:public de.greenrobot.dao.query.WhereCondition orEq(java.lang.Object)
+    229:229:public de.greenrobot.dao.query.WhereCondition orEq(java.lang.Object,java.util.Objects)
+    237:237:public de.greenrobot.dao.query.WhereCondition andUneq(java.lang.Object)
+    244:244:public de.greenrobot.dao.query.WhereCondition andUneq(java.lang.Object,java.util.Objects)
+    252:252:public de.greenrobot.dao.query.WhereCondition orUneq(java.lang.Object)
+    259:259:public de.greenrobot.dao.query.WhereCondition orUneq(java.lang.Object,java.util.Objects)
+de.greenrobot.dao.async.AsyncOperation:
+    public static final int FLAG_MERGE_TX
+    public static final int FLAG_STOP_QUEUE_ON_EXCEPTION
+    int sequenceNumber
+    67:73:AsyncOperation(de.greenrobot.dao.async.AsyncOperation$OperationType,de.greenrobot.dao.AbstractDao,java.lang.Object,int)
+    75:81:AsyncOperation(de.greenrobot.dao.async.AsyncOperation$OperationType,android.database.sqlite.SQLiteDatabase,java.lang.Object,int)
+    84:84:public java.lang.Throwable getThrowable()
+    88:89:public void setThrowable(java.lang.Throwable)
+    92:92:public de.greenrobot.dao.async.AsyncOperation$OperationType getType()
+    96:96:public java.lang.Object getParameter()
+    107:113:public synchronized java.lang.Object getResult()
+    134:134:public long getTimeStarted()
+    138:138:public long getTimeCompleted()
+    142:145:public long getDuration()
+    154:154:public boolean isCompleted()
+    164:171:public synchronized java.lang.Object waitForCompletion()
+    181:188:public synchronized boolean waitForCompletion(int)
+    198:198:public boolean isCompletedSucessfully()
+    206:206:public int getMergedOperationsCount()
+    214:214:public int getSequenceNumber()
+de.greenrobot.dao.async.AsyncOperationExecutor:
+    private int lastSequenceNumber
+    59:68:public void enqueue(de.greenrobot.dao.async.AsyncOperation)
+    71:71:public int getMaxOperationCountToMerge()
+    75:76:public void setMaxOperationCountToMerge(int)
+    79:79:public int getWaitForMergeMillis()
+    83:84:public void setWaitForMergeMillis(int)
+    87:87:public de.greenrobot.dao.async.AsyncOperationListener getListener()
+    91:92:public void setListener(de.greenrobot.dao.async.AsyncOperationListener)
+    95:95:public de.greenrobot.dao.async.AsyncOperationListener getListenerMainThread()
+    99:100:public void setListenerMainThread(de.greenrobot.dao.async.AsyncOperationListener)
+    103:103:public synchronized boolean isCompleted()
+    111:118:public synchronized void waitForCompletion()
+    127:134:public synchronized boolean waitForCompletion(int)
+de.greenrobot.dao.async.AsyncSession:
+    32:32:public int getMaxOperationCountToMerge()
+    36:37:public void setMaxOperationCountToMerge(int)
+    40:40:public int getWaitForMergeMillis()
+    44:45:public void setWaitForMergeMillis(int)
+    48:48:public de.greenrobot.dao.async.AsyncOperationListener getListener()
+    52:53:public void setListener(de.greenrobot.dao.async.AsyncOperationListener)
+    56:56:public de.greenrobot.dao.async.AsyncOperationListener getListenerMainThread()
+    60:61:public void setListenerMainThread(de.greenrobot.dao.async.AsyncOperationListener)
+    64:64:public boolean isCompleted()
+    72:73:public void waitForCompletion()
+    82:82:public boolean waitForCompletion(int)
+    87:87:public de.greenrobot.dao.async.AsyncOperation insert(java.lang.Object)
+    92:92:public de.greenrobot.dao.async.AsyncOperation insert(java.lang.Object,int)
+    97:97:public varargs de.greenrobot.dao.async.AsyncOperation insertInTx(java.lang.Class,java.lang.Object[])
+    102:102:public varargs de.greenrobot.dao.async.AsyncOperation insertInTx(java.lang.Class,int,java.lang.Object[])
+    107:107:public de.greenrobot.dao.async.AsyncOperation insertInTx(java.lang.Class,java.lang.Iterable)
+    112:112:public de.greenrobot.dao.async.AsyncOperation insertInTx(java.lang.Class,java.lang.Iterable,int)
+    117:117:public de.greenrobot.dao.async.AsyncOperation insertOrReplace(java.lang.Object)
+    122:122:public de.greenrobot.dao.async.AsyncOperation insertOrReplace(java.lang.Object,int)
+    127:127:public varargs de.greenrobot.dao.async.AsyncOperation insertOrReplaceInTx(java.lang.Class,java.lang.Object[])
+    132:132:public varargs de.greenrobot.dao.async.AsyncOperation insertOrReplaceInTx(java.lang.Class,int,java.lang.Object[])
+    137:137:public de.greenrobot.dao.async.AsyncOperation insertOrReplaceInTx(java.lang.Class,java.lang.Iterable)
+    142:142:public de.greenrobot.dao.async.AsyncOperation insertOrReplaceInTx(java.lang.Class,java.lang.Iterable,int)
+    147:147:public de.greenrobot.dao.async.AsyncOperation update(java.lang.Object)
+    152:152:public de.greenrobot.dao.async.AsyncOperation update(java.lang.Object,int)
+    157:157:public varargs de.greenrobot.dao.async.AsyncOperation updateInTx(java.lang.Class,java.lang.Object[])
+    162:162:public varargs de.greenrobot.dao.async.AsyncOperation updateInTx(java.lang.Class,int,java.lang.Object[])
+    167:167:public de.greenrobot.dao.async.AsyncOperation updateInTx(java.lang.Class,java.lang.Iterable)
+    172:172:public de.greenrobot.dao.async.AsyncOperation updateInTx(java.lang.Class,java.lang.Iterable,int)
+    177:177:public de.greenrobot.dao.async.AsyncOperation delete(java.lang.Object)
+    182:182:public de.greenrobot.dao.async.AsyncOperation delete(java.lang.Object,int)
+    187:187:public de.greenrobot.dao.async.AsyncOperation deleteByKey(java.lang.Object)
+    192:192:public de.greenrobot.dao.async.AsyncOperation deleteByKey(java.lang.Object,int)
+    197:197:public varargs de.greenrobot.dao.async.AsyncOperation deleteInTx(java.lang.Class,java.lang.Object[])
+    202:202:public varargs de.greenrobot.dao.async.AsyncOperation deleteInTx(java.lang.Class,int,java.lang.Object[])
+    207:207:public de.greenrobot.dao.async.AsyncOperation deleteInTx(java.lang.Class,java.lang.Iterable)
+    212:212:public de.greenrobot.dao.async.AsyncOperation deleteInTx(java.lang.Class,java.lang.Iterable,int)
+    217:217:public de.greenrobot.dao.async.AsyncOperation deleteAll(java.lang.Class)
+    222:222:public de.greenrobot.dao.async.AsyncOperation deleteAll(java.lang.Class,int)
+    227:227:public de.greenrobot.dao.async.AsyncOperation runInTx(java.lang.Runnable)
+    232:232:public de.greenrobot.dao.async.AsyncOperation runInTx(java.lang.Runnable,int)
+    237:237:public de.greenrobot.dao.async.AsyncOperation callInTx(java.util.concurrent.Callable)
+    242:242:public de.greenrobot.dao.async.AsyncOperation callInTx(java.util.concurrent.Callable,int)
+    247:247:public de.greenrobot.dao.async.AsyncOperation queryList(de.greenrobot.dao.query.Query)
+    252:252:public de.greenrobot.dao.async.AsyncOperation queryList(de.greenrobot.dao.query.Query,int)
+    257:257:public de.greenrobot.dao.async.AsyncOperation queryUnique(de.greenrobot.dao.query.Query)
+    262:262:public de.greenrobot.dao.async.AsyncOperation queryUnique(de.greenrobot.dao.query.Query,int)
+    267:267:public de.greenrobot.dao.async.AsyncOperation load(java.lang.Class,java.lang.Object)
+    272:272:public de.greenrobot.dao.async.AsyncOperation load(java.lang.Class,java.lang.Object,int)
+    277:277:public de.greenrobot.dao.async.AsyncOperation loadAll(java.lang.Class)
+    282:282:public de.greenrobot.dao.async.AsyncOperation loadAll(java.lang.Class,int)
+    287:287:public de.greenrobot.dao.async.AsyncOperation count(java.lang.Class)
+    292:292:public de.greenrobot.dao.async.AsyncOperation count(java.lang.Class,int)
+    297:297:public de.greenrobot.dao.async.AsyncOperation refresh(java.lang.Object)
+    302:302:public de.greenrobot.dao.async.AsyncOperation refresh(java.lang.Object,int)
+    306:308:private de.greenrobot.dao.async.AsyncOperation enqueueDatabaseOperation(de.greenrobot.dao.async.AsyncOperation$OperationType,java.lang.Object,int)
+    312:312:private de.greenrobot.dao.async.AsyncOperation enqueueEntityOperation(de.greenrobot.dao.async.AsyncOperation$OperationType,java.lang.Object,int)
+    316:319:private de.greenrobot.dao.async.AsyncOperation enqueEntityOperation(de.greenrobot.dao.async.AsyncOperation$OperationType,java.lang.Class,java.lang.Object,int)
+de.greenrobot.dao.internal.DaoConfig:
+    150:151:public void setIdentityScope(de.greenrobot.dao.identityscope.IdentityScope)
+de.greenrobot.dao.internal.LongHashMap:
+    60:67:public boolean containsKey(long)
+    125:125:public int size()
+    155:164:public void logStats()
+de.greenrobot.dao.internal.SqlUtils:
+    25:25:public SqlUtils()
+    49:62:public static java.lang.StringBuilder appendColumns(java.lang.StringBuilder,java.lang.String,java.lang.String[],java.lang.String)
+    130:135:public static java.lang.String createSqlSelect(java.lang.String,java.lang.String[],java.lang.String)
+    139:140:public static java.lang.String createSqlSelectRaw(java.lang.String)
+    143:147:public static java.lang.String createSqlSelectRaw(java.lang.String,java.lang.String)
+    155:157:public static java.lang.String createSqlSelectCountStar(java.lang.String)
+    183:185:public static java.lang.String createSqlUpdate(java.lang.String)
+de.greenrobot.dao.internal.TableStatements:
+    private volatile java.lang.String selectKeys
+    87:90:public java.lang.String getSelectKeys()
+de.greenrobot.dao.query.AbstractQuery:
+    68:74:public void setParameter(int,java.lang.Object)
+de.greenrobot.dao.query.AbstractQueryData:
+    25:29:de.greenrobot.dao.query.AbstractQuery forCurrentThread(de.greenrobot.dao.query.AbstractQuery)
+de.greenrobot.dao.query.CloseableListIterator
+de.greenrobot.dao.query.CountQuery
+de.greenrobot.dao.query.CountQuery$1
+de.greenrobot.dao.query.CountQuery$QueryData
+de.greenrobot.dao.query.DeepQuery
+de.greenrobot.dao.query.DeepQuery$1
+de.greenrobot.dao.query.DeepQuery$QueryData
+de.greenrobot.dao.query.DeepQueryBuilder
+de.greenrobot.dao.query.DeleteQuery
+de.greenrobot.dao.query.DeleteQuery$1
+de.greenrobot.dao.query.DeleteQuery$QueryData
+de.greenrobot.dao.query.FuncQuery
+de.greenrobot.dao.query.FuncQuery$1
+de.greenrobot.dao.query.FuncQuery$QueryData
+de.greenrobot.dao.query.GroupQuery
+de.greenrobot.dao.query.GroupQuery$1
+de.greenrobot.dao.query.GroupQuery$QueryData
+de.greenrobot.dao.query.GroupQuery$QueryResultConsume
+de.greenrobot.dao.query.LazyList
+de.greenrobot.dao.query.LazyList$LazyIterator
+de.greenrobot.dao.query.Query:
+    81:81:public de.greenrobot.dao.query.Query forCurrentThread()
+    88:92:public void setParameter(int,java.lang.Object)
+    99:104:public void setLimit(int)
+    111:116:public void setOffset(int)
+    131:133:public de.greenrobot.dao.query.LazyList listLazy()
+    137:137:public android.database.Cursor getCursor()
+    146:148:public de.greenrobot.dao.query.LazyList listLazyUncached()
+    156:156:public de.greenrobot.dao.query.CloseableListIterator listIterator()
+    180:184:public java.lang.Object uniqueOrThrow()
+de.greenrobot.dao.query.QueryBuilder:
+    115:116:public varargs de.greenrobot.dao.query.QueryBuilder whereOr(de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition[])
+    125:125:public varargs de.greenrobot.dao.query.WhereCondition or(de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition[])
+    134:134:public varargs de.greenrobot.dao.query.WhereCondition and(de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition[])
+    139:151:protected varargs de.greenrobot.dao.query.WhereCondition combineWhereConditions(java.lang.String,de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition,de.greenrobot.dao.query.WhereCondition[])
+    155:158:protected void addCondition(java.lang.StringBuilder,java.util.List,de.greenrobot.dao.query.WhereCondition)
+    170:170:public de.greenrobot.dao.query.QueryBuilder join(java.lang.Class,de.greenrobot.dao.Property)
+    178:178:public de.greenrobot.dao.query.QueryBuilder joinToMany(java.lang.Class,de.greenrobot.dao.Property)
+    215:218:public de.greenrobot.dao.query.QueryBuilder orderCustom(de.greenrobot.dao.Property,java.lang.String)
+    226:228:public de.greenrobot.dao.query.QueryBuilder orderRaw(java.lang.String)
+    266:267:public de.greenrobot.dao.query.QueryBuilder offset(int)
+    325:328:public de.greenrobot.dao.query.GroupQuery buildGroup(de.greenrobot.dao.Property,java.util.List)
+    333:337:public de.greenrobot.dao.query.GroupQuery buildGroup(java.util.List,de.greenrobot.dao.FuncProperty)
+    341:387:public de.greenrobot.dao.query.GroupQuery buildGroup(java.util.List,java.util.List)
+    395:416:public de.greenrobot.dao.query.DeleteQuery buildDelete()
+    424:449:public varargs de.greenrobot.dao.query.UpdateQuery buildUpdate(de.greenrobot.dao.query.WhereCondition$UpdateCondition[])
+    457:470:public de.greenrobot.dao.query.CountQuery buildCount()
+    474:487:public de.greenrobot.dao.query.FuncQuery buildFunc(de.greenrobot.dao.FuncProperty)
+    507:522:private void appendGroupClause(java.lang.StringBuilder,java.util.List)
+    525:545:private varargs void appendUpdateClause(java.lang.StringBuilder,java.lang.String,de.greenrobot.dao.query.WhereCondition$UpdateCondition[])
+    562:562:public de.greenrobot.dao.query.LazyList listLazy()
+    571:571:public de.greenrobot.dao.query.LazyList listLazyUncached()
+    580:580:public de.greenrobot.dao.query.CloseableListIterator listIterator()
+    598:598:public java.lang.Object uniqueOrThrow()
+    607:607:public long count()
+de.greenrobot.dao.query.UpdateQuery
+de.greenrobot.dao.query.UpdateQuery$1
+de.greenrobot.dao.query.UpdateQuery$QueryData
+de.greenrobot.dao.query.WhereCondition$AbstractCondition:
+    40:44:public WhereCondition$AbstractCondition()
+    52:56:public WhereCondition$AbstractCondition(java.lang.Object[])
+de.greenrobot.dao.query.WhereCondition$PropertyCondition:
+    111:114:private static java.lang.Object[] checkValuesForType(de.greenrobot.dao.Property,java.lang.Object[])
+    120:123:public WhereCondition$PropertyCondition(de.greenrobot.dao.Property,java.lang.String)
+    131:134:public WhereCondition$PropertyCondition(de.greenrobot.dao.Property,java.lang.String,de.greenrobot.dao.Property)
+    137:140:public WhereCondition$PropertyCondition(de.greenrobot.dao.Property,java.lang.String,java.lang.Object[])
+de.greenrobot.dao.query.WhereCondition$PropertySelfCondition
+de.greenrobot.dao.query.WhereCondition$StringCondition
+de.greenrobot.dao.query.WhereCondition$UpdateCondition
+de.greenrobot.dao.test.AbstractDaoSessionTest
+de.greenrobot.dao.test.AbstractDaoTest
+de.greenrobot.dao.test.AbstractDaoTestLongPk
+de.greenrobot.dao.test.AbstractDaoTestSinglePk
+de.greenrobot.dao.test.AbstractDaoTestStringPk
+de.greenrobot.dao.test.DbTest
+de.greenrobot.event.EventBus:
+    87:87:public static de.greenrobot.event.EventBusBuilder builder()
+    92:94:public static void clearCaches()
+    143:144:public void register(java.lang.Object,int)
+    151:152:public void registerSticky(java.lang.Object)
+    159:160:public void registerSticky(java.lang.Object,int)
+    216:216:public synchronized boolean isRegistered(java.lang.Object)
+    280:293:public void cancelEventDelivery(java.lang.Object)
+    301:306:public void postSticky(java.lang.Object)
+    314:316:public java.lang.Object getStickyEvent(java.lang.Class)
+    325:327:public java.lang.Object removeStickyEvent(java.lang.Class)
+    336:345:public boolean removeStickyEvent(java.lang.Object)
+    352:355:public void removeAllStickyEvents()
+    358:372:public boolean hasSubscriberForEvent(java.lang.Class)
+de.greenrobot.event.EventBus$PostCallback
+de.greenrobot.event.EventBusBuilder:
+    44:45:public de.greenrobot.event.EventBusBuilder logSubscriberExceptions(boolean)
+    50:51:public de.greenrobot.event.EventBusBuilder logNoSubscriberMessages(boolean)
+    56:57:public de.greenrobot.event.EventBusBuilder sendSubscriberExceptionEvent(boolean)
+    62:63:public de.greenrobot.event.EventBusBuilder sendNoSubscriberEvent(boolean)
+    73:74:public de.greenrobot.event.EventBusBuilder throwSubscriberException(boolean)
+    87:88:public de.greenrobot.event.EventBusBuilder eventInheritance(boolean)
+    97:98:public de.greenrobot.event.EventBusBuilder executorService(java.util.concurrent.ExecutorService)
+    107:111:public de.greenrobot.event.EventBusBuilder skipMethodVerificationFor(java.lang.Class)
+    121:128:public de.greenrobot.event.EventBus installDefaultEventBus()
+    133:133:public de.greenrobot.event.EventBus build()
+de.greenrobot.event.SubscriberMethodFinder:
+    private static final java.lang.String ON_EVENT_METHOD_NAME
+    private static final int BRIDGE
+    private static final int SYNTHETIC
+    private static final int MODIFIERS_IGNORE
+    130:133:static void clearCaches()
+de.greenrobot.event.util.AsyncExecutor
+de.greenrobot.event.util.AsyncExecutor$1
+de.greenrobot.event.util.AsyncExecutor$Builder
+de.greenrobot.event.util.AsyncExecutor$RunnableEx
+de.greenrobot.event.util.ErrorDialogConfig
+de.greenrobot.event.util.ErrorDialogFragmentFactory
+de.greenrobot.event.util.ErrorDialogFragmentFactory$Honeycomb
+de.greenrobot.event.util.ErrorDialogFragmentFactory$Support
+de.greenrobot.event.util.ErrorDialogFragments
+de.greenrobot.event.util.ErrorDialogFragments$Honeycomb
+de.greenrobot.event.util.ErrorDialogFragments$Support
+de.greenrobot.event.util.ErrorDialogManager
+de.greenrobot.event.util.ErrorDialogManager$HoneycombManagerFragment
+de.greenrobot.event.util.ErrorDialogManager$SupportManagerFragment
+de.greenrobot.event.util.ExceptionToResourceMapping
+de.greenrobot.event.util.HasExecutionScope
+de.greenrobot.event.util.ThrowableFailureEvent
+eu.janmuller.android.simplecropimage.BitmapManager:
+    private static final java.lang.String TAG
+    119:120:private synchronized void setDecodingOptions(java.lang.Thread,android.graphics.BitmapFactory$Options)
+    124:125:synchronized android.graphics.BitmapFactory$Options getDecodingOptions(java.lang.Thread)
+    130:132:synchronized void removeDecodingOptions(java.lang.Thread)
+    140:143:public synchronized void allowThreadDecoding(eu.janmuller.android.simplecropimage.BitmapManager$ThreadSet)
+    158:164:public synchronized boolean canThreadDecoding(java.lang.Thread)
+    169:170:public synchronized void allowThreadDecoding(java.lang.Thread)
+    189:198:public synchronized void dump()
+    214:228:public android.graphics.Bitmap decodeFileDescriptor(java.io.FileDescriptor,android.graphics.BitmapFactory$Options)
+eu.janmuller.android.simplecropimage.BitmapManager$ThreadSet:
+    76:77:public void add(java.lang.Thread)
+    81:82:public void remove(java.lang.Thread)
+eu.janmuller.android.simplecropimage.BuildConfig
+eu.janmuller.android.simplecropimage.CropImage:
+    private static final java.lang.String TAG
+    public static final java.lang.String IMAGE_PATH
+    public static final java.lang.String SCALE
+    public static final java.lang.String ORIENTATION_IN_DEGREES
+    public static final java.lang.String ASPECT_X
+    public static final java.lang.String ASPECT_Y
+    public static final java.lang.String OUTPUT_X
+    public static final java.lang.String OUTPUT_Y
+    public static final java.lang.String SCALE_UP_IF_NEEDED
+    public static final java.lang.String CIRCLE_CROP
+    public static final java.lang.String RETURN_DATA
+    public static final java.lang.String RETURN_DATA_AS_BITMAP
+    public static final java.lang.String ACTION_INLINE_DATA
+    public static final int NO_STORAGE_ERROR
+    public static final int CANNOT_STAT_ERROR
+eu.janmuller.android.simplecropimage.CropImageView:
+    55:60:protected void zoomIn()
+    65:70:protected void zoomOut()
+eu.janmuller.android.simplecropimage.HighlightView:
+    private static final java.lang.String TAG
+    public static final int GROW_NONE
+    public static final int GROW_LEFT_EDGE
+    public static final int GROW_RIGHT_EDGE
+    public static final int GROW_TOP_EDGE
+    public static final int GROW_BOTTOM_EDGE
+    public static final int MOVE
+    200:200:public eu.janmuller.android.simplecropimage.HighlightView$ModifyMode getMode()
+eu.janmuller.android.simplecropimage.ImageViewTouchBase:
+    private static final java.lang.String TAG
+    static final float SCALE_RATE
+    81:82:public void setRecycler(eu.janmuller.android.simplecropimage.ImageViewTouchBase$Recycler)
+    147:148:public void clear()
+    372:373:protected void zoomIn()
+    377:378:protected void zoomOut()
+    382:394:protected void zoomIn(float)
+    398:416:protected void zoomOut(float)
+eu.janmuller.android.simplecropimage.MonitoredActivity$LifeCycleAdapter:
+    56:56:public void onActivityPaused(eu.janmuller.android.simplecropimage.MonitoredActivity)
+    60:60:public void onActivityResumed(eu.janmuller.android.simplecropimage.MonitoredActivity)
+eu.janmuller.android.simplecropimage.MonitoredActivity$LifeCycleListener:
+    public abstract void onActivityPaused(eu.janmuller.android.simplecropimage.MonitoredActivity)
+    public abstract void onActivityResumed(eu.janmuller.android.simplecropimage.MonitoredActivity)
+eu.janmuller.android.simplecropimage.R:
+    9:39:public R()
+eu.janmuller.android.simplecropimage.R$drawable:
+    10:10:public R$drawable()
+eu.janmuller.android.simplecropimage.R$id:
+    20:20:public R$id()
+eu.janmuller.android.simplecropimage.R$layout:
+    27:27:public R$layout()
+eu.janmuller.android.simplecropimage.R$string:
+    31:31:public R$string()
+eu.janmuller.android.simplecropimage.R$style
+eu.janmuller.android.simplecropimage.RotateBitmap:
+    public static final java.lang.String TAG
+    34:38:public RotateBitmap(android.graphics.Bitmap,int)
+    101:105:public void recycle()
+eu.janmuller.android.simplecropimage.Util:
+    private static final java.lang.String TAG
+    34:36:private Util()
+    216:218:public static android.graphics.BitmapFactory$Options createNativeAllocOptions()
+it.sauronsoftware.base64.Base64:
+    public Base64()
+    public static java.lang.String encode(java.lang.String,java.lang.String)
+    public static java.lang.String decode(java.lang.String,java.lang.String)
+    public static void encode(java.io.InputStream,java.io.OutputStream)
+    public static void encode(java.io.File,java.io.File,int)
+    public static void encode(java.io.File,java.io.File)
+    public static void decode(java.io.File,java.io.File)
+it.sauronsoftware.base64.Base64OutputStream:
+    public Base64OutputStream(java.io.OutputStream)
+it.sauronsoftware.base64.Shared:
+    Shared()
+kankan.wheel.BuildConfig
+kankan.wheel.R:
+    9:10:public R()
+kankan.wheel.R$drawable:
+    10:10:public R$drawable()
+kankan.wheel.widget.WheelAdapter
+kankan.wheel.widget.WheelScroller:
+    private static final int SCROLLING_DURATION
+    public static final int MIN_DELTA_FOR_SCROLLING
+kankan.wheel.widget.WheelView:
+    private static final int ITEM_OFFSET_PERCENT
+    private static final int PADDING
+    private static final int DEF_VISIBLE_ITEMS
+    253:254:public void addChangingListener(kankan.wheel.widget.OnWheelChangedListener)
+    261:262:public void removeChangingListener(kankan.wheel.widget.OnWheelChangedListener)
+    280:281:public void addScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    288:289:public void removeScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    314:315:public void addClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    322:323:public void removeClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    419:419:public boolean drawShadows()
+    936:937:public void stopScrolling()
+kankan.wheel.widget.adapters.AbstractWheelAdapter:
+    57:62:protected void notifyDataChangedEvent()
+    68:73:protected void notifyDataInvalidatedEvent()
+kankan.wheel.widget.adapters.AbstractWheelTextAdapter:
+    public static final int TEXT_VIEW_ITEM_RESOURCE
+    protected static final int NO_RESOURCE
+    public static final int DEFAULT_TEXT_COLOR
+    public static final int LABEL_COLOR
+    public static final int DEFAULT_TEXT_SIZE
+    68:69:protected AbstractWheelTextAdapter(android.content.Context)
+    77:78:protected AbstractWheelTextAdapter(android.content.Context,int)
+    99:99:public int getTextColor()
+    107:108:public void setTextColor(int)
+    115:115:public int getTextSize()
+    123:124:public void setTextSize(int)
+    131:131:public int getItemResource()
+    139:140:public void setItemResource(int)
+    147:147:public int getItemTextResource()
+    163:163:public int getEmptyItemResource()
+    171:172:public void setEmptyItemResource(int)
+kankan.wheel.widget.adapters.AdapterWheel
+kankan.wheel.widget.adapters.ArrayWheelAdapter
+kankan.wheel.widget.adapters.NumericWheelAdapter
+me.add1.common.BackgroundThread
+me.add1.common.Base64
+me.add1.common.BuildConfig
+me.add1.common.Md5
+me.add1.common.ParcelUtils:
+    public static final int EXIST_SEPARATOR
+    public static final int NON_SEPARATOR
+    15:15:public ParcelUtils()
+    30:36:public static void writeToParcel(android.os.Parcel,java.lang.Long)
+    48:54:public static void writeToParcel(android.os.Parcel,java.lang.Float)
+    57:63:public static void writeToParcel(android.os.Parcel,java.lang.Double)
+    66:72:public static void writeToParcel(android.os.Parcel,java.util.Map)
+    75:81:public static void writeToParcel(android.os.Parcel,java.util.Date)
+    84:88:public static java.lang.Float readFloatFromParcel(android.os.Parcel)
+    93:97:public static java.lang.Double readDoubleFromParcel(android.os.Parcel)
+    102:106:public static java.util.Date readDateFromParcel(android.os.Parcel)
+    120:124:public static java.lang.Long readLongFromParcel(android.os.Parcel)
+    138:142:public static java.util.Map readMapFromParcel(android.os.Parcel)
+    165:171:public static void writeToParcel(android.os.Parcel,java.util.List)
+    175:179:public static java.util.ArrayList readListFromParcel(android.os.Parcel,java.lang.Class)
+    184:190:public static void writeListToParcel(android.os.Parcel,java.util.List)
+    193:203:public static android.os.Parcelable bytesToParcelable(byte[],java.lang.Class)
+    207:211:public static byte[] parcelableToByte(android.os.Parcelable)
+    215:225:public static java.util.List bytesToParcelableList(byte[],java.lang.Class)
+    229:234:public static byte[] parcelableListToByte(java.util.List)
+me.add1.common.PriorityRunnable
+me.add1.common.PriorityThreadFactory
+me.add1.common.PriorityThreadFactory$1
+me.add1.common.R
+me.add1.common.R$attr
+me.add1.common.R$drawable
+me.add1.common.R$string
+me.add1.common.RequestProcess
+stackblur.NativeBlurProcess
+stackblur.NativeBlurProcess$NativeTask
+stackblur.StackBlurManager:
+    79:79:public android.graphics.Bitmap returnBlurredImage()
+    88:93:public void saveIntoFile(java.lang.String)
+    100:100:public android.graphics.Bitmap getImage()
+    107:109:public android.graphics.Bitmap processNatively(int)
+u.aly.a:
+    80:81:public void a(u.aly.ar)
+u.aly.b:
+    private static final java.lang.String a
+u.aly.bi:
+    public static final java.lang.String b
+    public static final java.lang.String c
+    public static final java.lang.String d
+    public static final int e
+    57:65:public static boolean a(java.lang.String,android.content.Context)
+    76:77:public static boolean a(android.content.Context)
+    87:90:public static boolean b(android.content.Context)
+    151:160:public static java.lang.String e(android.content.Context)
+    278:287:public static java.lang.String h(android.content.Context)
+    299:312:public static java.lang.String i(android.content.Context)
+    394:398:public static boolean b()
+    544:555:public static java.lang.String q(android.content.Context)
+    636:638:public static java.lang.String a(java.util.Date)
+    647:650:public static java.lang.String c()
+    662:666:public static java.util.Date a(java.lang.String)
+    680:688:public static int a(java.util.Date,java.util.Date)
+u.aly.bj:
+    8:8:public bj()
+    56:59:public static void d(java.lang.String,java.lang.String)
+    62:65:public static void d(java.lang.String,java.lang.String,java.lang.Exception)
+u.aly.bk
+u.aly.bl
+u.aly.bl$a
+u.aly.bl$b
+u.aly.bm
+u.aly.bn:
+    public u.aly.bn$a a
+    21:28:public bn(org.json.JSONObject)
+u.aly.br
+u.aly.bs
+u.aly.bt
+u.aly.bu:
+    15:15:public bu()
+    75:81:public static java.lang.String a(byte[],java.lang.String)
+    85:102:public static byte[] b(byte[])
+u.aly.bv:
+    private static final java.lang.String b
+    34:34:public bv()
+    105:124:public static java.lang.String a(java.io.File)
+    146:158:public static java.lang.String a(android.content.Context,long)
+    162:181:public static java.lang.String c(java.lang.String)
+    192:195:public static void a(android.content.Context,java.lang.String)
+    207:213:public static boolean b(android.content.Context,java.lang.String)
+    237:242:public static boolean e(java.lang.String)
+    252:253:public static java.lang.String a()
+    262:265:public static java.lang.String a(java.util.Date)
+    333:334:public static void a(java.io.File,java.lang.String)
+u.aly.bw:
+    25:25:public bw()
+    37:38:public static final void a(int,byte[])
+    52:56:public static final void a(int,byte[],int)
+    67:67:public static final int a(byte[])
+    81:81:public static final int a(byte[],int)
+    94:94:public static final boolean a(short,int)
+    102:102:public static final boolean a(long,int)
+    113:113:public static final short b(short,int)
+    121:121:public static final long b(long,int)
+    132:132:public static final short a(short,int,boolean)
+    143:146:public static final long a(long,int,boolean)
+u.aly.bx:
+    53:53:public short b()
+u.aly.ca:
+    34:34:private ca()
+    55:55:public static int a(boolean,boolean)
+    69:74:public static int a(short,short)
+    89:94:public static int a(long,long)
+    99:104:public static int a(double,double)
+    109:109:public static int a(java.lang.String,java.lang.String)
+    299:305:public static byte[] a(byte[])
+u.aly.cb
+u.aly.cc:
+    88:94:public void a(u.aly.bz,java.lang.String,java.lang.String)
+    107:117:public varargs void a(u.aly.bz,byte[],u.aly.cg,u.aly.cg[])
+    128:128:public varargs java.lang.Boolean a(byte[],u.aly.cg,u.aly.cg[])
+    140:140:public varargs java.lang.Byte b(byte[],u.aly.cg,u.aly.cg[])
+    152:152:public varargs java.lang.Double c(byte[],u.aly.cg,u.aly.cg[])
+    164:164:public varargs java.lang.Short d(byte[],u.aly.cg,u.aly.cg[])
+    176:176:public varargs java.lang.Integer e(byte[],u.aly.cg,u.aly.cg[])
+    188:188:public varargs java.lang.Long f(byte[],u.aly.cg,u.aly.cg[])
+    200:200:public varargs java.lang.String g(byte[],u.aly.cg,u.aly.cg[])
+    213:213:public varargs java.nio.ByteBuffer h(byte[],u.aly.cg,u.aly.cg[])
+    226:236:public varargs java.lang.Short i(byte[],u.aly.cg,u.aly.cg[])
+    242:293:private varargs java.lang.Object a(byte,byte[],u.aly.cg,u.aly.cg[])
+    298:335:private varargs u.aly.ct j(byte[],u.aly.cg,u.aly.cg[])
+    346:347:public void a(u.aly.bz,java.lang.String)
+u.aly.cd
+u.aly.ce
+u.aly.cg:
+    public abstract java.lang.String b()
+u.aly.ch
+u.aly.ci:
+    97:99:public java.lang.String a(u.aly.bz,java.lang.String)
+    112:112:public java.lang.String b(u.aly.bz)
+u.aly.cr:
+    protected static final int a
+    protected static final int b
+    85:86:public cr(u.aly.dm)
+    95:105:public void a(u.aly.cw)
+    107:107:public void a()
+    140:142:public void a(u.aly.dc)
+    144:144:public void g()
+    210:221:public u.aly.cw h()
+    225:225:public void i()
+u.aly.cs:
+    private static final byte h
+    private static final byte i
+    private static final byte j
+    private static final byte k
+    private static final int l
+    170:174:public void a(u.aly.cw)
+    266:267:public void a(u.aly.dc)
+    353:353:public void a()
+    356:356:public void g()
+    473:485:public u.aly.cw h()
+    701:701:public void i()
+u.aly.cs$b
+u.aly.ct:
+    46:46:public boolean a(u.aly.ct)
+u.aly.cw
+u.aly.cx
+u.aly.cy:
+    41:41:private cy()
+    59:59:public u.aly.dm C()
+    public abstract void a(u.aly.cw)
+    public abstract void a()
+    public abstract void a(u.aly.dc)
+    public abstract void g()
+    public abstract void a(byte)
+    public abstract u.aly.cw h()
+    public abstract void i()
+u.aly.d:
+    46:47:public void a(long)
+    104:104:public java.lang.String c()
+u.aly.db:
+    29:29:public db()
+    49:50:public static void a(int)
+    171:194:public static u.aly.da a(byte[],u.aly.da)
+u.aly.df
+u.aly.dk:
+    36:74:public dk(java.io.InputStream,java.io.OutputStream)
+    83:83:public boolean a()
+    89:89:public void b()
+    95:111:public void c()
+    150:158:public void d()
+u.aly.dl:
+    30:32:public dl(byte[])
+    34:36:public dl(byte[],int,int)
+    53:53:public void c()
+    57:57:public boolean a()
+    61:61:public void b()
+u.aly.dm:
+    public abstract boolean a()
+    42:42:public boolean i()
+    public abstract void b()
+    public abstract void c()
+    125:125:public void d()
+u.aly.do
+u.aly.e:
+    private static final java.lang.String a
+u.aly.f:
+    private static final java.lang.String a
+    179:180:public boolean d()
+u.aly.g:
+    private static final java.lang.String a
+u.aly.h:
+    5:5:public h()
+u.aly.i:
+    private static final java.lang.String a
+    private static final java.lang.String b
+u.aly.k:
+    30:31:public void a(u.aly.o)
+u.aly.l:
+    28:32:public int a(java.lang.String)
+u.aly.q:
+    43:43:public android.content.Context a()
+    47:47:protected boolean a(int)
+u.aly.r:
+    public static final int a
+    public static final int b
+    public static final int c
+u.aly.s:
+    10:10:public s()
+u.aly.u:
+    private static final java.lang.String a
+    10:11:private u()
+u.aly.v:
+    private static final java.lang.String a
+    private static final java.lang.String b
+    private static final java.lang.String c
+    private static final java.lang.String f
+u.aly.w:
+    private static final java.lang.String h
+    private static final java.lang.String i
+    private static final java.lang.String j
+    private static final java.lang.String k
+    private static final java.lang.String l
+    49:49:public int a()
+u.aly.y:
+    private static final java.lang.String a
+    private static final java.lang.String b
+    21:21:public y()
+u.aly.z:
+    private static final java.lang.String a
+u.upd.a:
+    public static final java.lang.String b
+    public static final java.lang.String c
+    public static final java.lang.String d
+    public static final int e
+    57:65:public static boolean a(java.lang.String,android.content.Context)
+    76:77:public static boolean a(android.content.Context)
+    87:90:public static boolean b(android.content.Context)
+    119:123:public static java.lang.String d(android.content.Context)
+    151:160:public static java.lang.String e(android.content.Context)
+    172:180:public static java.lang.String[] a(javax.microedition.khronos.opengles.GL10)
+    190:218:public static java.lang.String a()
+    267:267:public static java.lang.String g(android.content.Context)
+    278:287:public static java.lang.String h(android.content.Context)
+    299:312:public static java.lang.String i(android.content.Context)
+    411:420:public static int m(android.content.Context)
+    431:451:public static java.lang.String[] n(android.content.Context)
+    462:479:private static java.util.Locale x(android.content.Context)
+    544:555:public static java.lang.String q(android.content.Context)
+    565:597:public static int[] r(android.content.Context)
+    602:608:private static int a(java.lang.Object,java.lang.String)
+    620:626:public static java.lang.String s(android.content.Context)
+    636:638:public static java.lang.String a(java.util.Date)
+    647:650:public static java.lang.String c()
+    662:666:public static java.util.Date a(java.lang.String)
+    680:688:public static int a(java.util.Date,java.util.Date)
+    753:755:public static boolean w(android.content.Context)
+u.upd.b:
+    8:8:public b()
+    56:59:public static void d(java.lang.String,java.lang.String)
+    62:65:public static void d(java.lang.String,java.lang.String,java.lang.Exception)
+u.upd.c:
+    47:47:public int a(java.lang.String)
+    91:91:public int e(java.lang.String)
+    113:113:public int g(java.lang.String)
+u.upd.d
+u.upd.d$a
+u.upd.d$b
+u.upd.e:
+    17:18:public e()
+u.upd.f:
+    21:28:public f(org.json.JSONObject)
+u.upd.j:
+    8:8:public j()
+    31:31:public static int f(android.content.Context)
+u.upd.k:
+    8:8:public k()
+u.upd.l:
+    7:7:public l()
+u.upd.m:
+    15:15:public m()
+    75:81:public static java.lang.String a(byte[],java.lang.String)
+    85:102:public static byte[] b(byte[])
+u.upd.n:
+    private static final java.lang.String b
+    34:34:public n()
+    146:158:public static java.lang.String a(android.content.Context,long)
+    192:195:public static void a(android.content.Context,java.lang.String)
+    207:213:public static boolean b(android.content.Context,java.lang.String)
+    237:242:public static boolean e(java.lang.String)
+    276:287:public static java.lang.String a(java.io.InputStream)
+    297:306:public static byte[] b(java.io.InputStream)
+    316:324:public static void a(java.io.File,byte[])
+    333:334:public static void a(java.io.File,java.lang.String)
+    341:346:public static void c(java.io.InputStream)
+    352:357:public static void a(java.io.OutputStream)
+uk.co.senab.bitmapcache.BitmapLruCache:
+    static final int DISK_CACHE_FLUSH_DELAY_SECS
+    337:337:public boolean isDiskCacheEnabled()
+    344:344:public boolean isMemoryCacheEnabled()
+    423:423:public uk.co.senab.bitmapcache.CacheableBitmapDrawable put(java.lang.String,java.io.InputStream)
+    444:492:public uk.co.senab.bitmapcache.CacheableBitmapDrawable put(java.lang.String,java.io.InputStream,android.graphics.BitmapFactory$Options)
+    539:553:public void remove(java.lang.String)
+    561:564:public void trimMemory()
+uk.co.senab.bitmapcache.BitmapLruCache$Builder:
+    static final int MEGABYTE
+    static final float DEFAULT_MEMORY_CACHE_HEAP_RATIO
+    static final float MAX_MEMORY_CACHE_HEAP_RATIO
+    static final int DEFAULT_DISK_CACHE_MAX_SIZE_MB
+    static final int DEFAULT_MEM_CACHE_MAX_SIZE_MB
+    static final float DEFAULT_MEMORY_CACHE_HEAP_PERCENTAGE
+    static final float MAX_MEMORY_CACHE_HEAP_PERCENTAGE
+    703:703:private static long getHeapSize()
+    804:805:public uk.co.senab.bitmapcache.BitmapLruCache$Builder setDiskCacheMaxSize(long)
+    814:815:public uk.co.senab.bitmapcache.BitmapLruCache$Builder setMemoryCacheEnabled(boolean)
+    836:836:public uk.co.senab.bitmapcache.BitmapLruCache$Builder setMemoryCacheMaxSizeUsingHeapSize()
+    848:850:public uk.co.senab.bitmapcache.BitmapLruCache$Builder setMemoryCacheMaxSizeUsingHeapSize(float)
+    861:866:public uk.co.senab.bitmapcache.BitmapLruCache$Builder setRecyclePolicy(uk.co.senab.bitmapcache.BitmapLruCache$RecyclePolicy)
+uk.co.senab.bitmapcache.BitmapLruCache$FileInputStreamProvider
+uk.co.senab.bitmapcache.BitmapMemoryLruCache:
+    105:113:void trimMemory()
+uk.co.senab.bitmapcache.CacheableBitmapDrawable:
+    public static final int SOURCE_UNKNOWN
+    public static final int SOURCE_NEW
+    public static final int SOURCE_INBITMAP
+    static final java.lang.String LOG_TAG
+    109:109:public int getSource()
+    131:131:public synchronized boolean isBeingDisplayed()
+    138:138:public synchronized boolean isReferencedByCache()
+uk.co.senab.bitmapcache.Constants:
+    static final int UNUSED_DRAWABLE_RECYCLE_DELAY_MS
+    18:18:Constants()
+uk.co.senab.bitmapcache.IoUtils:
+    27:27:IoUtils()
+uk.co.senab.bitmapcache.Md5:
+    21:21:Md5()
+uk.co.senab.bitmapcache.SDK11:
+    25:25:SDK11()
+uk.co.senab.photoview.Compat:
+    private static final int SIXTY_FPS_INTERVAL
+    25:25:public Compat()
+uk.co.senab.photoview.IPhotoView
+uk.co.senab.photoview.PhotoView:
+    62:62:public boolean canZoom()
+    77:77:public boolean setDisplayMatrix(android.graphics.Matrix)
+    213:214:public void setScale(float,boolean)
+    218:219:public void setScale(float,float,float,boolean)
+uk.co.senab.photoview.PhotoViewAttacher:
+    private static final java.lang.String LOG_TAG
+    static final int ZOOM_DURATION
+    static final int EDGE_NONE
+    static final int EDGE_LEFT
+    static final int EDGE_RIGHT
+    static final int EDGE_BOTH
+    public static final float DEFAULT_MAX_SCALE
+    public static final float DEFAULT_MID_SCALE
+    public static final float DEFAULT_MIN_SCALE
+    192:192:public final boolean canZoom()
+    245:259:public boolean setDisplayMatrix(android.graphics.Matrix)
+    292:292:public float getMinScale()
+    303:303:public float getMidScale()
+    314:314:public float getMaxScale()
+    543:544:public void setMinScale(float)
+    555:556:public void setMidScale(float)
+    567:568:public void setMaxScale(float)
+    673:673:public android.graphics.Matrix getDisplayMatrix()
+uk.co.senab.photoview.gestures.CupcakeGestureDetector:
+    private static final java.lang.String LOG_TAG
+uk.co.senab.photoview.gestures.EclairGestureDetector:
+    private static final int INVALID_POINTER_ID
+uk.co.senab.photoview.gestures.VersionedGestureDetector:
+    22:22:public VersionedGestureDetector()
+uk.co.senab.photoview.log.LogManager:
+    23:23:public LogManager()
+    28:29:public static void setLogger(uk.co.senab.photoview.log.Logger)
+uk.co.senab.photoview.log.Logger:
+    public abstract int v(java.lang.String,java.lang.String)
+    public abstract int v(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int i(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int w(java.lang.String,java.lang.String)
+    public abstract int w(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int e(java.lang.String,java.lang.String)
+    public abstract int e(java.lang.String,java.lang.String,java.lang.Throwable)
+uk.co.senab.photoview.log.LoggerDefault:
+    27:27:public int v(java.lang.String,java.lang.String)
+    32:32:public int v(java.lang.String,java.lang.String,java.lang.Throwable)
+    42:42:public int d(java.lang.String,java.lang.String,java.lang.Throwable)
+    52:52:public int i(java.lang.String,java.lang.String,java.lang.Throwable)
+    57:57:public int w(java.lang.String,java.lang.String)
+    62:62:public int w(java.lang.String,java.lang.String,java.lang.Throwable)
+    67:67:public int e(java.lang.String,java.lang.String)
+    72:72:public int e(java.lang.String,java.lang.String,java.lang.Throwable)

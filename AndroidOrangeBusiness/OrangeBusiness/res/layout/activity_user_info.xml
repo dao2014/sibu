@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_all_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_userinfo_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/activity_userinfo_head_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/photo_txt"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+
+            <com.socialbusiness.dev.orangebusiness.component.CircleImageView
+                xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_userinfo_head_image"
+                android:layout_width="@dimen/me_avatar_size"
+                android:layout_height="@dimen/me_avatar_size"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                CircleImageView:border_width="2dp"
+                CircleImageView:border_color="@color/white"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/activity_userinfo_head_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/activity_userinfo_isMemberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="会员审核"
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/sl_item_bg"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/is_member"
+                    android:textColor="@color/gray_userinfo"
+                    android:textSize="@dimen/order_detail_normal_text_size" />
+
+                <ImageView
+                    android:id="@+id/activity_userinfo_isMemberSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/sl_switch" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/activity_userinfo_isMemberDivLine">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="注:会员审核通过后,该用户才能登录并下单"
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_userinfo_base_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/base_information"
+            android:textColor="@color/user_info_edit_color"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/network_name"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_network_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/remark_layout">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/user_remark"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:id="@+id/remark_layout_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/type_userinfo"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_type"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:editable="false"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+
+        <LinearLayout
+            android:id="@+id/activity_userinfo_realnameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/realname"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_realname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:id="@+id/activity_userinfo_sexLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/sex"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_sex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:editable="false"
+                android:inputType="none"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/id_card_no"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_id_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <TextView
+            android:id="@+id/activity_userinfo_contact_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/contact_way"
+            android:textColor="@color/user_info_edit_color"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mobilephone_number"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/weixin_number"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/qq_number"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size"/>
+
+            <EditText
+                android:id="@+id/activity_userinfo_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/sl_item_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/me_frament_left_text_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/residential_addr"
+                android:textColor="@color/gray_userinfo"
+                android:textSize="@dimen/order_detail_small_text_size" />
+
+            <EditText
+                android:id="@+id/activity_userinfo_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size"
+                android:maxLines="2"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/activity_userinfo_isAdminLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="工作人员"
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/sl_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/is_admin"
+                    android:textColor="@color/gray_userinfo"
+                    android:textSize="@dimen/order_detail_normal_text_size" />
+
+                <ImageView
+                    android:id="@+id/activity_userinfo_isAdminSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/sl_switch" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_userinfo_isAdminDivLine"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="注:工作人员可以代替上级处理订单"
+                android:textColor="@color/user_info_edit_color"
+                android:textSize="@dimen/order_detail_small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/activity_userinfo_save_change"
+                style="@style/bottom_btn_style"
+                android:text="@string/save_change"
+                android:textSize="@dimen/order_detail_normal_text_size"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

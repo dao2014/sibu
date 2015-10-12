@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_layout" >
+
+    <RelativeLayout
+        android:id="@+id/activity_add_product_search_bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_bg_e0" >
+
+        <RelativeLayout
+            android:id="@+id/activity_add_product_search_layout"
+            style="@style/search_layout_style" >
+
+            <ImageView
+                android:id="@+id/activity_add_product_searchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/ic_search_product" />
+            
+            <TextView
+                android:id="@+id/activity_add_product_searchTxt"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/search"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/activity_add_product_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/activity_add_product_searchTxt"
+                android:layout_toRightOf="@id/activity_add_product_searchIcon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_product_name_to_search"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/activity_add_product_search_layout"
+            android:background="@color/cell_divider_dark" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/activity_add_product_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_add_product_search_bg_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+</RelativeLayout>

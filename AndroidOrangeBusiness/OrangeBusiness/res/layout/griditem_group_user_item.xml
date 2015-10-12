@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.socialbusiness.dev.orangebusiness.component.CircleImageView
+        xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/griditem_group_user_item_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        CircleImageView:border_width="2dp"
+        CircleImageView:border_color="@color/white" />
+    
+    <TextView 
+        android:id="@+id/griditem_group_user_item_userNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/griditem_group_user_item_avatar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="用户昵称"/>
+
+    <ImageView
+        android:id="@+id/griditem_group_user_item_badgeDelete"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:src="@drawable/appitem_del_btn"
+        android:visibility="visible" />
+
+</RelativeLayout>

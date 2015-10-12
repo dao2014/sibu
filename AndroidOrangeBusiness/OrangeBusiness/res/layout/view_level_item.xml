@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg_e0"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/view_vip_item_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="一级会员"
+        android:textColor="@color/gray_userinfo"
+        android:textSize="@dimen/order_detail_normal_text_size" />
+
+    <TextView
+        android:id="@+id/view_vip_item_num_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数："
+        android:textColor="@color/gray_userinfo"
+        android:textSize="@dimen/order_detail_normal_text_size" />
+
+    <TextView
+        android:id="@+id/view_vip_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/orange_text"
+        android:textSize="@dimen/order_detail_normal_text_size"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/view_vip_item_num_hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人"
+        android:textColor="@color/orange_text"
+        android:textSize="@dimen/order_detail_normal_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

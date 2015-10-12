@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="批量转采购，使用客户的收货地址，每个订单独立转采购"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/multi_transition"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="批量转采购"
+        android:textColor="@color/btn_normal"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="合并转采购，使用我的默认收货地址，把多个订单合并为一个订单转采购"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_color"
+        />
+    <TextView
+        android:id="@+id/merge_transition"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="合并转采购"
+        android:textColor="@color/btn_normal"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/total_money_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_big"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/total_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/order_detail_normal_text_size"
+            android:textColor="@color/mall_right_text_color"
+            android:text="待确认订单"
+            />
+
+        <TextView
+            android:id="@+id/total_money_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_normal"
+            android:textSize="@dimen/order_detail_normal_text_size" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark" />
+</LinearLayout>

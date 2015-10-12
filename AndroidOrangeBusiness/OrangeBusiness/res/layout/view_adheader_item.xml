@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/main_color" >
+     <com.socialbusiness.dev.orangebusiness.component.FixedViewPager
+        android:id="@+id/view_adheader_item_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+    <com.socialbusiness.dev.orangebusiness.component.IndecatorView
+        android:id="@+id/view_adheader_item_indecatorview"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    
+
+</RelativeLayout>

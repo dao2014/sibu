@@ -1,0 +1,530 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.socialbusiness.dev.orangebusiness"
+    android:versionCode="2020111111"
+    android:versionName="1.0.17">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <permission
+        android:name="com.socialbusiness.dev.orangebusiness.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.socialbusiness.dev.orangebusiness.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name="com.socialbusiness.dev.orangebusiness.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name_orangebusiness"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".activity.splash.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 自定义的界面Activity android:launchMode="singleTop"-->
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustNothing"
+            android:hardwareAccelerated="false"
+            />
+        <activity
+            android:name=".activity.order.SalesPurchaseOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.SalesOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.order.AddProductActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.order.SalesWaitingConfirmOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.SalesWaiting2PayOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.SalseWaiting2PayOrderTabActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.order.SalseWaitingDeliverTabActivity"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name=".activity.order.SalesWaitingDeliverOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.SalesDeliveredOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.SalesInputOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.order.ShoppingCartListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.PurchaseOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.order.PlaceAnOrderActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.order.PlaceAnOrderEnsureActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.order.ReceiptedActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.me.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.TutorialsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.RegisterStep1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.RegisterStep1TabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.EnterpriseRegisterStap2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.RegisterStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.FindPasswordStep1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.FindPasswordStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.product.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.product.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.contact.GroupListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.AddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.NoticeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.NoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.CoursewareListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.CourseClassifyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.LevelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.VipListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.VipDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.contact.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.contact.GroupCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.contact.GroupAddMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.me.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kollway.android.imageviewer.activity.ImageViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".component.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle"
+            />
+        <activity
+            android:name=".activity.contact.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.order.MyCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.ScanProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.order.OrderSearchActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.order.MultiUploadPayImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.base.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.contact.ContactActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- End 自定义的界面Activity -->
+
+        <!-- 裁剪图片的Activity -->
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+        <!-- End 裁剪图片的Activity -->
+
+        <!-- 友盟SDK -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54a37ec1fd98c54411000b2f"></meta-data>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- End 友盟SDK -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 极光推送 -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="af673164c51a3c4c4bd66600"/>
+        <!--5fee080277cb327e1360365d   af673164c51a3c4c4bd66600-->
+
+
+        <!-- Jpush -->
+        <receiver
+            android:name=".receiver.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.socialbusiness.dev.orangebusiness" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000"> <!--since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!--since 1.3.5 -->
+                <category android:name="com.socialbusiness.dev.orangebusiness" />
+                <!--since 1.3.5 -->
+            </intent-filter>
+            <!--since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.socialbusiness.dev.orangebusiness" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+         <!--WeChat-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sdksample" />
+            </intent-filter>
+
+        </activity>
+
+        <!--<activity-->
+            <!--android:name="io.rong.imkit.demo.UserInfoActivity"-->
+            <!--android:screenOrientation="portrait"></activity>-->
+        <activity
+            android:name="io.rong.imkit.demo.LocationActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity android:name="io.rong.imkit.demo.DemoNotificationCycleSettingActivity" />-->
+        <!-- Begin Rong Cloud z3v5yqkbv8v30   cpj2xarljqx7n-->
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="pgyu6atqyk6eu" />
+        <service android:name="io.rong.imlib.RongService" />
+
+        <activity
+            android:name="io.rong.imkit.RongActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversationsetting/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:path="/grouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:path="/conversationgrouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/friend/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="io.rong.imkit.RongSingleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--io.rong.imkit.RongSecActivity-->
+        <activity
+            android:name=".activity.contact.CustomRongSecActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversation/private"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversation/chatroom"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversation/group"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversation/discussion"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:pathPrefix="/conversation/system"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.voipkit.calledSideActivity.action" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.socialbusiness.dev.orangebusiness"
+                    android:path="/calledsideactivity"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.imkit.service.RongIMService"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000"></service>
+
+        <service
+            android:name="io.rong.imlib.push.PushService"
+            android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="io.rong.imlib.push.CommandService"
+            android:process="io.rong.push">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.imlib.push.PushReceiver"
+            android:process="io.rong.push">
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name="io.rong.imlib.push.PushMessageReceiver">
+
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+
+        <!-- End Rong Cloud -->
+
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="7JYBZ-4Y3W4-JMUU7-DJHQU-NOYH7-SRBBU" />
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="function_list">
+        <item>"会话列表"</item>
+        <item>"客服"</item>
+        <item>"图文客服"</item>
+        <item>"和自己聊聊"</item>
+        <item>"群组列表"</item>
+        <item>"聊天室"</item>
+        <item>自定义测试</item>
+        <item>自定义测试2</item>
+        <item>发送自定义消息</item>
+        <item>"黑名单"</item>
+        <item>"push消息设置"</item>
+    </string-array>
+
+
+
+</resources>

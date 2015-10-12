@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app主色调 -->
+	<color name="orange_app_main">#ed6d00</color>
+    <color name="main_color">@color/orange_app_main</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#5CACEE</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="bg_all_layout">@color/gray_bg_e0</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+	
+	<color name="tab_indicator_select_rect">@color/main_color</color>
+    <color name="tab_indicator_unselect_rect">#19000000</color>
+    <color name="tabbar_txt_unselect_color">#373737</color>
+    <color name="tabbar_txt_select_color">@color/main_color</color>
+    <color name="tabbar_bg_color">#333333</color>
+    
+    <color name="orange_bottom_sl">#ee7b18</color>
+    <color name="gray_bottom">#999999</color>
+    
+    <!-- 按钮样式(橙色) -->
+    <color name="btn_normal">@color/main_color</color>
+    <color name="btn_press">#ffb357</color>
+    <color name="btn_press_top_right">#88ffffff</color>
+    <color name="wait_deliver_total_layout_bg">#EAEAEA</color>
+
+    <color name="camera_bg">#cdd0d5</color>
+    <color name="light_blue">#36a7ef</color>
+    <color name="comment_red">#da1c1c</color>
+    
+    <!-- 产品 -->
+    <color name="gray_product_txt">#b3b3b3</color>
+    <color name="gray_b3">@color/gray_product_txt</color>
+    <color name="gray_product_search_bg">#EEEEEE</color>
+    <color name="red_product_price">#f85145</color>
+    
+    <color name="orange_order_sum">#ef8636</color>
+    
+    <!-- 灰边 -->
+    <!--<color name="cell_divider">#CCCCCC</color>-->
+    <color name="cell_divider">#DBDBDB</color>
+    <!--<color name="cell_divider_dark">#b5b2b2</color>-->
+    <color name="cell_divider_dark">#DFDFDF</color>
+    <color name="boarder_color_dark">#989898</color>
+    
+    <color name="gray_userinfo">#373737</color>
+
+    <!--<color name="gray_userinfo">#808080</color>-->
+    
+    <!-- 照相机背景 -->
+    <color name="bg_camera_norm">#cdd0d5</color>
+    <color name="bg_camera_press">#aab1bc</color>
+    
+    <!-- 申请认证 -->
+    <color name="authentication_apply">#ffac28</color>
+    <color name="vip_txtcolor">#ffac28</color>
+    <color name="personal_title_color">#3E8F40</color>
+    
+    <color name="red">#F74E3B</color>
+    <color name="view_item_hightligit_bg">#fafafa</color>
+    
+    <!-- 同用的灰色字体 -->
+    <color name="text_color">#A1A1A1</color>
+    <color name="text_color_dark">#777777</color>
+    <color name="gray_dial_text">#edede7</color>
+    <color name="flipping_text_center">#8c8f94</color>
+    <color name="gray_et_hint">#aaaaaa</color>
+    <color name="gray_order_list">#666666</color>
+    <color name="gray_bg_e0">#F5F5F5</color>
+    <color name="search_layout_color">#EEEEEE</color>
+    <color name="text_color_blue">#ff267ab4</color>
+	<color name="orange_product_num">#f5b792</color>
+    
+    <color name="green_weixin_btn">#45c01a</color>
+    <color name="green_weixin_btn_press">#298409</color>
+    <color name="green_down_item">#00ce30</color>
+    <color name="green_goodToEyes">#6cd079</color>
+    <color name="flipping_text_bg">#B3B6BC</color>
+    
+    <!-- 灰色背景 -->
+    <color name="gray_bg">#F1F1F1</color>
+    <color name="gray_video_sl">@color/gray_btn_sl</color>
+    <color name="gray_btn_sl">#e6e6e6</color>
+    
+    <!-- 橙色 -->
+    <color name="orange_text">#FF7F00</color>
+    <color name="orange">#FFA500</color>
+    <color name="mall_left_text_color">#232323</color>
+    <color name="mall_right_text_color">#373737</color>
+
+    <color name="user_info_edit_color">#8E8E8E</color>
+    <color name="order_item_num_text_color">#a9a9a9</color>
+    <color name="order_detail_hint_color">#878787</color>
+</resources>

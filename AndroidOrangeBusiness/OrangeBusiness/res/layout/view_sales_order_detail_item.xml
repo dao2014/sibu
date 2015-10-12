@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_sales_order_detail_item_all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/white" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/view_sales_order_detail_item_product_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_default_mid"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/view_sales_order_detail_item_product_image" >
+
+        <com.socialbusiness.dev.orangebusiness.component.KWAutoScrollTextView
+            android:id="@+id/view_sales_order_detail_item_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="产品名称一"
+            android:textColor="@color/text_color_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/view_sales_order_detail_item_rmb_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_sales_order_detail_item_product_name"
+            android:layout_marginTop="12dp"
+            android:text="@string/yuan_symbol"
+            android:textColor="@color/comment_red"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/view_sales_order_detail_item_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_sales_order_detail_item_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/view_sales_order_detail_item_rmb_symbol"
+            android:background="@drawable/bg_selector_rectangle"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:minWidth="30dp"
+            android:padding="5dp"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_sales_order_detail_item_multiply_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/view_sales_order_detail_item_rmb_symbol"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/view_sales_order_detail_item_product_price"
+            android:text="@string/symbol_multiply"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/view_sales_order_detail_item_product_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_sales_order_detail_item_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/view_sales_order_detail_item_multiply_symbol"
+            android:background="@drawable/bg_selector_rectangle"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minWidth="30dp"
+            android:padding="5dp"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_sales_order_detail_item_sum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="合计："
+            android:textColor="@color/comment_red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_sales_order_detail_item_rmb_sum_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/view_sales_order_detail_item_sum_text"
+            android:text="@string/yuan_symbol"
+            android:textColor="@color/comment_red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_sales_order_detail_item_product_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/view_sales_order_detail_item_rmb_sum_symbol"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="20"
+            android:textColor="@color/comment_red"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view_sales_order_detail_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/btn_delete" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/view_sales_order_detail_item_product_image"
+        android:layout_marginTop="10dp"
+        android:background="@color/cell_divider" />
+
+</RelativeLayout>

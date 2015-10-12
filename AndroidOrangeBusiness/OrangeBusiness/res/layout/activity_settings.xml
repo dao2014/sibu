@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/settings_massege_hint"
+        android:textColor="@color/text_color_dark"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_tabs_height"
+            android:background="@drawable/sl_item_bg">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mall_right_text_color"
+                android:text="@string/de_notification_set"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/order_detail_small_text_size"
+                android:layout_marginLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/notification_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sl_switch" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_to_dip_27"
+                android:layout_marginRight="@dimen/px_to_dip_27"
+                android:layout_below="@+id/notification_checkbox"
+                android:layout_marginTop="@dimen/px_to_dip_18"
+                android:layout_marginBottom="@dimen/px_to_dip_16"
+                android:text="@string/de_notification_information"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <LinearLayout
+            android:id="@+id/close_notification"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/start_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_salse_item_height"
+                android:background="@drawable/sl_item_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/order_detail_normal_text_size"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/de_notification_start"
+                    android:textColor="@color/mall_right_text_color" />
+
+                <TextView
+                    android:id="@+id/start_time_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider_dark" />
+
+            <RelativeLayout
+                android:id="@+id/end_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_salse_item_height"
+                android:background="@drawable/sl_item_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/order_detail_normal_text_size"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/de_notification_end"
+                    android:textColor="@color/mall_right_text_color" />
+
+                <TextView
+                    android:id="@+id/end_time_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/cell_divider_dark" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_msgAlertSwitchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_salse_item_height"
+            android:background="@drawable/sl_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/settings_massege_receive"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+
+            <ImageView
+                android:id="@+id/activity_settings_msgAlertSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sl_switch" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/activity_settings_msgAlertDivLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_soundSwitchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_salse_item_height"
+            android:background="@drawable/sl_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/settings_massege_sound"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+
+            <ImageView
+                android:id="@+id/activity_settings_soundSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sl_switch" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/activity_settings_soundDivLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <RelativeLayout
+            android:id="@+id/activity_settings_vibrateSwitchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_salse_item_height"
+            android:background="@drawable/sl_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/settings_massege_shake"
+                android:textSize="@dimen/order_detail_normal_text_size" />
+
+            <ImageView
+                android:id="@+id/activity_settings_vibrateSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sl_switch" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/activity_settings_vibrateDivLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/settings_massege_other"
+        android:textColor="@color/text_color_dark"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark" />
+
+    <RelativeLayout
+        android:id="@+id/activity_settings_other_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tabs_height"
+        android:background="@drawable/sl_item_bg"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/activity_settings_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_go_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/settings_massege_feedback"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:textColor="@color/mall_right_text_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark" />
+
+    <RelativeLayout
+        android:id="@+id/activity_settings_other_check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tabs_height"
+        android:background="@drawable/sl_item_bg"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/activity_settings_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_go_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/settings_massege_check"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:textColor="@color/mall_right_text_color" />
+
+        <TextView
+            android:id="@+id/activity_settings_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/activity_settings_check"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="@dimen/order_detail_normal_text_size"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cell_divider_dark" />
+
+    <RelativeLayout
+        android:id="@+id/activity_settings_other_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tabs_height"
+        android:background="@drawable/sl_item_bg"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/activity_settings_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_go_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/settings_massege_about"
+            android:textSize="@dimen/order_detail_small_text_size"
+            android:textColor="@color/mall_right_text_color" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cell_divider_dark" />
+
+        <TextView
+            android:id="@+id/activity_settings_quit"
+            style="@style/bottom_btn_style"
+            android:text="@string/quit"
+            />
+    </LinearLayout>
+</LinearLayout>

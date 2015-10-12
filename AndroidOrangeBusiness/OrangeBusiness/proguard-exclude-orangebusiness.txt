@@ -1,0 +1,23 @@
+-keep class com.socialbusiness.dev.orangebusiness.model.** { *; }
+-keep class com.kollway.android.easemodlibrary.** { *; }
+-keep class com.socialbusiness.dev.orangebusiness.R$* { *; }
+
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+ public *;
+}
+
+-keepattributes Exceptions,InnerClasses
+
+-keep class io.rong.** {*;}
+
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+ public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+-dontwarn org.eclipse.jdt.annotation.**
+
+-keep class com.ultrapower.** {*;}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}

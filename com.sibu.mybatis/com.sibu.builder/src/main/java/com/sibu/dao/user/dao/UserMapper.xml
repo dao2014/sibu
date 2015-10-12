@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sibu.dao.user.dao.UserMapper">
+	<resultMap id="rs_userBean" type="com.sibu.dao.user.bean.UserBean">
+		<result property="id" column="id" javaType="java.lang.String" jdbcType="VARCHAR"/>
+		<result property="createdatetime" column="createdatetime" javaType="java.util.Date" jdbcType="VARCHAR"/>
+		<result property="modifydatetime" column="modifydatetime" javaType="java.util.Date" jdbcType="VARCHAR"/>
+		<result property="name" column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+		<result property="pwd" column="pwd" javaType="java.lang.String" jdbcType="VARCHAR"/>
+		<result property="createDate" column="create_date" javaType="java.lang.String" jdbcType="VARCHAR"/>
+		<result property="updateTime" column="update_time" javaType="java.lang.String" jdbcType="VARCHAR"/>
+	</resultMap>
+	<select id="count" resultType="java.lang.Integer" >
+		SELECT COUNT(id) FROM user
+		<trim prefix="where" prefixOverrides="and | or">
+			<if test="null != id">
+				 id = #{id}
+			</if>
+		</trim> 
+	</select>
+	<select id="list" resultMap="rs_userBean" >
+		SELECT * FROM user
+		<trim prefix="where" prefixOverrides="and | or">
+			<if test="null != id">
+				 id = #{id}
+			</if>
+		</trim> 
+		ORDER BY create_date desc
+	</select>
+	<select id="get" resultMap="rs_userBean" parameterType="java.lang.String">
+		SELECT * FROM user
+		where  id = #{id}
+	</select>
+	<insert id="save" parameterType="com.sibu.dao.user.bean.UserBean">
+		INSERT INTO user (
+			id,createdatetime,modifydatetime,name,pwd,create_date,update_time
+		) VALUES (
+			#{id},#{createdatetime},#{modifydatetime},#{name},#{pwd},#{createDate},#{updateTime}
+		)
+		<!-- <selectKey resultType="java.lang.String" keyProperty="id">
+			<![CDATA[SELECT last_insert_id() AS id ]]>
+		</selectKey> -->
+	</insert>
+	<update id="update" parameterType="java.util.Map">
+		UPDATE user
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="null != createdatetime">
+				createdatetime=#{createdatetime},
+			</if>
+			<if test="null != modifydatetime">
+				modifydatetime=#{modifydatetime},
+			</if>
+			<if test="null != name">
+				name=#{name},
+			</if>
+			<if test="null != pwd">
+				pwd=#{pwd},
+			</if>
+			<if test="null != createDate">
+				create_date=#{createDate},
+			</if>
+			<if test="null != updateTime">
+				update_time=#{updateTime},
+			</if>
+
+		</trim>
+		WHERE id = #{id}
+	</update>
+	<delete id="delete" parameterType="java.lang.Integer">
+		DELETE FROM user WHERE id = #{id}
+	</delete>
+	<delete id="batchDelete" parameterType="java.util.List">
+		DELETE FROM user WHERE id in
+		<foreach collection="list" item="item"  open="(" separator="," close=")">  
+			#{item} 
+		</foreach>
+	</delete>
+</mapper>
